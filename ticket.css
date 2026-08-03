@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+body {
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.full_text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  font-family: "ROG Fonts STRIX SCAR", sans-serif;
+  background-color: black;
+  border: 1px solid red;
+  transition: all 0.1s ease-in-out;
+  overflow: hidden;
+  z-index: 10;
+}
+.home2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  text-align: start;
+  font-size: 50px;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline red;
+}
+.text_d {
+  margin-top: 50px;
+  font-size: 50px;
+  background: linear-gradient(135deg, red 5%, white 35%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: "ROG Fonts STRIX SCAR", sans-serif;
+}
+.container1 img {
+  height: 600px;
+  border: 2px solid red;
+  filter: brightness(0.65);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img_top:hover {
+  transform: scale(1.02);
+}
+.container1 {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+.container2 {
+  margin-left: 25px;
+  width: 100%;
+  padding: 20px;
+  gap: 25px;
+  display: flex;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+  filter: brightness(0.75);
+}
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover {
+  transform: scale(1.06);
+  filter: brightness(1);
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  justify-content: space-between;
+}
+.container2 img {
+  border-radius: 14px;
+  border: 1px solid red;
+}
+.text_header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+}
+.text_header img {
+  height: 100px;
+  position: relative;
+  right: 50px;
+  margin-right: 60%;
+}
+.text_header a {
+  color: white;
+  font-size: 20px;
+  margin-left: 45px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.text_header a:hover {
+  transform: scale(1.2);
+}
+input {
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  width: 180px;
+  font-family: "ROG Fonts STRIX SCAR", sans-serif;
+  border-radius: 50px;
+  outline: none;
+}
+.logo {
+  height: 100px;
+}
+.racer {
+  padding: 50px;
+}
+.racer2 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.616);
+  border: 1px solid red;
+  gap: 25px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+  color: orangered;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.racer3 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.616);
+  border: 1px solid #00ffe1;
+  gap: 25px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+  color: #00ffe1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.para {
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+  margin-left: 10px;
+  line-height: 32px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.f1-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.f1-card {
+  margin-top: 50px;
+  background: #1f1f27;
+  color: #ffffff;
+  border-radius: 12px;
+  width: 30%;
+  min-width: 280px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-bottom: 4px solid #e10600;
+}
+.f1-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(225, 6, 0, 0.2);
+}
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.driver-img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.order {
+  font-family: "Black Ops One", system-ui;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 25%;
+  background: linear-gradient(135deg, #e10600 0%, #b30500 100%);
+  border: 1px solid #ff4d4d;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 0 #8b0400;
+  position: relative;
+}
+.order:hover {
+  background: #ff1810;
+  box-shadow: 0 6px 0 #8b0400;
+  transform: translateY(-2px);
+}
+.order:active {
+  box-shadow: 0 0px 0 #8b0400;
+  transform: translateY(4px);
+}
+.f1-card:hover .driver-img {
+  transform: scale(1.05);
+}
+.card-content {
+  padding: 20px;
+}
+.team-badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: red;
+  font-weight: bold;
+}
+.driver-name {
+  font-size: 1.5rem;
+  margin: 5px 0 15px 0;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.stats-list li {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #a1a1a8;
+  position: relative;
+  padding-left: 15px;
+}
+.stats-list li::before {
+  content: "•";
+  color: #e10600;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+.stats-list li strong {
+  color: #ffffff;
+}
+.racer2 img {
+  transition: 0.3s ease;
+}
+.racer2 img:hover {
+  transform: scale(1.05);
+}
+.racer3 img {
+  transition: 0.3s;
+}
+.racer3 img:hover {
+  transform: scale(1.05);
+}
+.racer4 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.616);
+  border: 1px solid red;
+  gap: 25px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.racer5 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.616);
+  border: 1px solid #00d38d;
+  gap: 25px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+  color: #00d38d;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.racer6 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.616);
+  border: 1px solid orange;
+  gap: 25px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+  color: orange;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.text_1 {
+  font-size: 20px;
+  width: 100%;
+}
+.text_1 p {
+  margin: 5px;
+  margin-left: 65px;
+  padding: 1rem;
+  font-family: sans-serif;
+  font-size: 25px;
+  line-height: 1cm;
+}
+.f1-footer {
+  background-color: #111112;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  padding: 60px 0 20px 0;
+  border-top: 2px solid #e10600;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-brand {
+  flex: 1;
+  max-width: 300px;
+}
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.footer-logo span {
+  color: #e10600;
+}
+.footer-brand p {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.footer-links-grid {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-column {
+  text-align: left;
+}
+.footer-column h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-column li {
+  margin-bottom: 12px;
+}
+.footer-column a {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+.footer-column a:hover {
+  color: #e10600;
+}
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding: 20px 20px 0 20px;
+  border-top: 1px solid #27272a;
+  text-align: left;
+}
+.footer-bottom p {
+  color: #71717a;
+  font-size: 0.8rem;
+}
+@media (max-width: 1280px) {
+  .text_header {
+    margin-left: 150px;
+  }
+  .text_header img {
+    margin-right: 20%;
+  }
+  .f1-card {
+    width: 45%;
+  }
+}
+@media (max-width: 1023px) {
+  .text_header {
+    margin-left: 20px;
+  }
+  .text_header img {
+    display: none;
+  }
+  .text_header a {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  .f1-card {
+    width: 48%;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    margin-top: 140px;
+  }
+  .full_text {
+    height: auto;
+    min-height: 70px;
+    padding: 8px 0;
+  }
+  .header_container {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  .logo {
+    height: 50px;
+  }
+  .text_header {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    gap: 8px !important;
+    margin-top: 10px;
+  }
+  .text_header img {
+    display: none;
+  }
+  .text_header a {
+    font-size: 14px;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    padding: 2px 0;
+  }
+  input {
+    width: 85% !important;
+    margin: 0 auto;
+  }
+  .racer {
+    padding: 20px 10px;
+  }
+  .text_d {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .f1-card {
+    width: 100% !important;
+    max-width: 100%;
+    margin-top: 25px;
+  }
+  .order {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-links-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

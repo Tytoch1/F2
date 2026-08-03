@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - F1 Hub</title>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin-top: 100px;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .full_text {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      width: 100%;
+      height: 80px;
+      font-family: 'ROG Fonts STRIX SCAR', sans-serif;
+      background-color: black;
+      border-bottom: 1px solid red;
+      transition: all 0.1s ease-in-out;
+      z-index: 100;
+    }
+
+    .header_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      width: 100%;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+    }
+
+    .text_header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .text_header a {
+      color: white;
+      font-size: 18px;
+      margin-left: 25px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .text_header a:hover {
+      transform: scale(1.1);
+      color: red;
+    }
+
+    input {
+      padding: .5rem 1rem;
+      border: 1px solid gray;
+      width: 180px;
+      font-family: 'ROG Fonts STRIX SCAR', sans-serif;
+      border-radius: 50px;
+      outline: none;
+      color: white;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .about-wrapper {
+      width: 85%;
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 30px;
+      border: 2px solid red;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .profile-card img {
+      width: 220px;
+      height: 270px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #e10600;
+      transition: 0.2s ease;
+    }
+    .profile-card img:hover {
+      transform: scale(1.08);
+    }
+
+    .profile-info {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .profile-info p {
+      margin-bottom: 6px;
+      color: #cccccc;
+    }
+
+    .profile-info span.highlight {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .profile-info a {
+      color: #e10600;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .profile-info a:hover {
+      text-decoration: underline;
+    }
+
+    .container-anima {
+      width: 85%;
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 30px;
+      border: 2px solid red;
+    }
+
+    .container-anima h2 {
+      font-size: 25px;
+      margin-bottom: 25px;
+      text-align: left;
+      color: white;
+    }
+
+    .container-skill {
+      margin-bottom: 20px;
+    }
+
+    .info {
+      color: #ffffff;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .container-bar {
+      height: 10px;
+      background-color: #2a2a2a;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .container-style {
+      height: 100%;
+      width: 0;
+      background-color: #e10600;
+      border-radius: inherit;
+      animation: fill 1.5s ease forwards;
+    }
+
+    @keyframes fill {
+      to {
+        width: var(--width);
+      }
+    }
+
+    .bio-description {
+      margin-top: 25px;
+      color: #b0b0b0;
+      line-height: 1.6;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .thank {
+      text-align: center;
+      margin: 60px 0 30px 0;
+    }
+
+    .thank h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .thank h1 span {
+      color: #e10600;
+    }
+
+    .f1-footer {
+      background-color: #111112;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      padding: 60px 0 20px 0;
+      border-top: 2px solid #e10600;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .footer-brand {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .footer-logo span {
+      color: #e10600;
+    }
+
+    .footer-brand p {
+      color: #a1a1aa;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .link_social {
+      display: flex;
+      gap: 15px;
+    }
+
+    .link_social a img {
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+
+    .link_social a img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer-links-grid {
+      flex: 2;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .footer-column {
+      text-align: left;
+    }
+
+    .footer-column h3 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column li {
+      margin-bottom: 12px;
+    }
+
+    .footer-column a {
+      color: #a1a1aa;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-column a:hover {
+      color: #e10600;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 40px auto 0 auto;
+      padding: 20px 20px 0 20px;
+      border-top: 1px solid #27272a;
+      text-align: left;
+    }
+
+    .footer-bottom p {
+      color: #71717a;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 1023px) {
+      .text_header a {
+        margin-left: 15px;
+        font-size: 16px;
+      }
+
+      .about-wrapper,
+      .container-anima {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        margin-top: 150px;
+      }
+
+      .full_text {
+        height: auto;
+        min-height: 70px;
+        padding: 8px 0;
+      }
+
+      .header_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 10px;
+      }
+
+      .logo {
+        height: 45px;
+        margin-bottom: 2px;
+      }
+
+      .text_header {
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        margin-left: 0 !important;
+      }
+
+      .text_header span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4px;
+      }
+
+      .text_header input[type="text"] {
+        width: 80% !important;
+      }
+
+      .text_header a {
+        margin-left: 6px !important;
+        margin-right: 6px !important;
+        font-size: 14px;
+      }
+
+      .about-wrapper,
+      .container-anima {
+        width: 92%;
+        padding: 20px;
+        margin: 25px auto;
+      }
+
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .profile-card img {
+        width: 180px;
+        height: 220px;
+      }
+
+      .profile-info {
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .thank h1 {
+        font-size: 36px;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .footer-brand {
+        max-width: 100%;
+      }
+
+      .link_social {
+        justify-content: center;
+      }
+
+      .footer-links-grid {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .footer-column {
+        text-align: center;
+      }
+
+      .footer-bottom {
+        text-align: center;
+      }
+    }
+  </style>
+
+  <header>
+    <div class="full_text">
+      <div class="header_container">
+        <img src="img/logo/logo_f1.jpg" alt="f1" class="logo">
+        <div class="text_header">
+          <span><input type="text" placeholder="Search .........."></span>
+          <a href="index_f1.html">Home</a>
+          <a href="ticket.html" style="color: red;">Ticket</a>
+          <a href="team.html">Team</a>
+          <a href="chanpan.html" style="color: red;">Champan</a>
+          <a href="model_f1.html">Model</a>
+          <a href="#about" style="color: red;">About</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div style="width: 85%; max-width: 1000px; margin: 40px auto 20px auto;">
+    <h1 id="about" class="section-title">Project Overview</h1>
+    <p style="color: #cccccc; font-size: 15px; line-height: 1.6;">
+      This is my first major project, which I completed independently within two weeks.
+      The following are the <span style="color: #e10600; font-weight: 600;">teacher and developer</span> of this
+      website.
+    </p>
+  </div>
+
+  <!-- Teacher Profile -->
+  <div class="about-wrapper">
+    <h2 style="font-size: 18px; margin-bottom: 20px; color: #e10600;">Teacher Profile</h2>
+    <div class="about-content">
+      <div class="profile-card">
+        <img src="img/about/teacher.jpg" alt="Teacher Ry Visan">
+      </div>
+      <div class="profile-info">
+        <p>Teacher Name: <span class="highlight">Ry Visan</span></p>
+        <p>Subject: <span class="highlight">Web Development</span></p>
+        <p>School: <span class="highlight">Setec Institute</span></p>
+        <p>Contact Telegram: <a href="https://t.me/visanry" target="_blank">Ry Visan</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Developer Profile -->
+  <div class="about-wrapper">
+    <h2 style="font-size: 18px; margin-bottom: 20px; color: #e10600;">Student Profile</h2>
+    <div class="about-content">
+      <div class="profile-card">
+        <img src="img/about/ai image.jpg" alt="Developer Chea Sokty">
+      </div>
+      <div class="profile-info">
+        <p>Student Name: <span class="highlight">Chea Sokty</span></p>
+        <p>NO: <span class="highlight">04</span></p>
+        <p>Group: <span class="highlight">SX16</span></p>
+        <p>School: <span class="highlight">Setec Institute</span></p>
+        <p>Contact: <a href="https://t.me/HeaTy11" target="_blank">Heaty</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-anima">
+    <h2>The Percentage Rate</h2>
+
+    <div class="container-skill">
+      <div class="info">
+        <span>HTML</span>
+        <span>50%</span>
+      </div>
+      <div class="container-bar">
+        <div class="container-style" style="--width:50%"></div>
+      </div>
+    </div>
+
+    <div class="container-skill">
+      <div class="info">
+        <span>CSS</span>
+        <span>60%</span>
+      </div>
+      <div class="container-bar">
+        <div class="container-style" style="--width:60%"></div>
+      </div>
+    </div>
+
+    <div class="container-skill">
+      <div class="info">
+        <span>JavaScript</span>
+        <span>05%</span>
+      </div>
+      <div class="container-bar">
+        <div class="container-style" style="--width:05%"></div>
+      </div>
+    </div>
+
+    <p class="bio-description">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid amet ut, voluptatem vero commodi obcaecati
+      aperiam, dignissimos minima laudantium debitis tenetur sed natus.
+    </p>
+  </div>
+  <!-- Thank You Section -->
+  <div class="thank">
+    <h1>Thank <span>YOU</span></h1>
+  </div>
+  <!-- Footer -->
+  <footer class="f1-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2 class="footer-logo">F1<span>HUB</span></h2>
+        <p>Your ultimate destination for motorsport news, telemetry data, and race weekend schedules.</p>
+        <div class="link_social">
+          <a href="https://www.facebook.com/share/18Qh47CpqL/" target="_blank"><img src="img/logo/fb.png"
+              alt="facebook"></a>
+          <a href="https://www.tiktok.com/@tyzo92?_r=1&_t=ZS-97tOq0W3lMQ" target="_blank"><img src="img/logo/tiktok.png"
+              alt="tiktok"></a>
+          <a href="https://t.me/HeaTy11" target="_blank"><img src="img/logo/tg1.png" alt="telegram"></a>
+          <a href="https://youtube.com/@tyzo_999?si=thQLvRNdyPQgLAPV" target="_blank"><img src="img/logo/youtube.png"
+              alt="youtube"></a>
+        </div>
+      </div>
+      <div class="footer-links-grid">
+        <div class="footer-column">
+          <h3>The Grid</h3>
+          <ul>
+            <li><a href="index_f1.html">Home</a></li>
+            <li><a href="ticket.html">Ticket</a></li>
+            <li><a href="team.html">Teams</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Race Weekend</h3>
+          <ul>
+            <li><a href="chanpan.html">Champan</a></li>
+            <li><a href="model_f1.html">Model</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Paddock</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 F1 Hub. Unofficial fan project.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

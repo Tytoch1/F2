@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Champan</title>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      animation: fadeInAnimation ease 0.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      margin-top: 100px;
+      background-color: black;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .f1_text {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 50px;
+      background: linear-gradient(135deg, red 25%, white 90%, red 15%);
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .full_text {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      width: 100%;
+      height: 80px;
+      font-family: 'ROG Fonts STRIX SCAR', sans-serif;
+      background-color: black;
+      border-bottom: 1px solid red;
+      transition: all 0.1s ease-in-out;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    .container {
+      text-align: start;
+      font-size: 50px;
+      font-family: "Black Ops One", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: underline red;
+    }
+
+    .container1 img {
+      height: 600px;
+      border: 2px solid red;
+      filter: brightness(0.65);
+      transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .header_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      width: 100%;
+    }
+
+    .container2 img {
+      border-radius: 14px;
+      border: 1px solid red;
+    }
+
+    .text_header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .text_header a {
+      color: white;
+      font-size: 18px;
+      margin-left: 25px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .text_header a:hover {
+      transform: scale(1.1);
+      color: red;
+    }
+
+    input {
+      padding: .5rem 1rem;
+      border: 1px solid gray;
+      width: 180px;
+      font-family: 'ROG Fonts STRIX SCAR', sans-serif;
+      border-radius: 50px;
+      outline: none;
+      color: white;
+    }
+    .logo {
+      height: 60px;
+    }
+
+    .container-champan-1 {
+      text-align: center;
+    }
+
+    .Container-champan {
+      padding: 50px 20px;
+    }
+
+    .champan-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .champan-image img {
+      width: 70%;
+      max-width: 1000px;
+      border-radius: 3px;
+      border: 1px solid rgba(255, 0, 0, 0.3);
+    }
+
+    .text-champan {
+      width: 70%;
+      margin: 0 auto;
+      text-align: left;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      line-height: 28px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .text-champan p {
+      margin-top: 30px;
+    }
+
+    .text-champan img {
+      display: block;
+      margin: 40px auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .f1-footer {
+      background-color: #111112;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      padding: 60px 0 20px 0;
+      border-top: 2px solid #E10600;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .footer-brand {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .footer-logo span {
+      color: #E10600;
+    }
+
+    .footer-brand p {
+      color: #A1A1AA;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .link_social {
+      display: flex;
+      gap: 15px;
+    }
+
+    .link_social img {
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 12px;
+      transition: transform 0.2s;
+    }
+
+    .link_social img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer-links-grid {
+      flex: 2;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .footer-column {
+      text-align: left;
+    }
+
+    .footer-column h3 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column li {
+      margin-bottom: 12px;
+    }
+
+    .footer-column a {
+      color: #A1A1AA;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-column a:hover {
+      color: #E10600;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 40px auto 0 auto;
+      padding: 20px 20px 0 20px;
+      border-top: 1px solid #27272A;
+      text-align: left;
+    }
+
+    .footer-bottom p {
+      color: #71717A;
+      font-size: 0.8rem;
+    }
+
+    /* Responsive Queries */
+    @media (max-width: 1023px) {
+      .text_header a {
+        margin-left: 15px;
+        font-size: 16px;
+      }
+      .text-champan {
+        width: 85%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        margin-top: 130px;
+      }
+      .full_text {
+        height: auto;
+        padding: 10px 0;
+      }
+      .header_container {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .text_header {
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+      }
+      .text_header a {
+        margin-left: 8px;
+        font-size: 14px;
+      }
+      input {
+        width: 140px;
+      }
+      .f1_text {
+        font-size: 32px;
+      }
+      .Container-champan p {
+        font-size: 18px !important;
+      }
+      .text-champan {
+        width: 90% !important;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+      }
+      .footer-links-grid {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer-column {
+        text-align: center;
+      }
+      .footer-bottom {
+        text-align: center;
+      }
+    }
+  </style>
+
+  <header>
+    <div class="full_text">
+      <div class="header_container">
+        <img src="img/logo/logo_f1.jpg" alt="f1" class="logo">
+        <div class="text_header">
+          <span><input type="text" placeholder="Search .........."></span>
+          <a href="index_f1.html">Home</a>
+          <a href="ticket.html" style="color: red;">Ticket</a>
+          <a href="team.html">Team</a>
+          <a href="#champan" style="color: red;">Champan</a>
+          <a href="model_f1.html">Model</a>
+          <a href="about.html" style="color: red;">About</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-champan-1" id="champan">
+    <div class="Container-champan">
+      <h1 class="f1_text">Formula 1 reveals calendar for 2026 season</h1>
+      <p style="font-size: 25px; margin-top: 20px;">The 2026 season's races have been revealed in full, with drivers and teams set to embark on another 24-round campaign.</p>
+    </div>
+    
+    <div class="champan-image">
+      <img src="img/racer/champan.avif" alt="champan">
+    </div>
+
+    <div class="text-champan">
+      <p>Formula 1 and the FIA have announced the calendar for the 2026 FIA Formula One World Championship, with drivers and teams set to embark on another 24-round campaign as new technical regulations and advanced sustainable fuels come into play.</p>
+      
+      <p>Starting with the Australian Grand Prix on the weekend of March 6-8 and concluding with the Abu Dhabi Grand Prix from December 4-6, the F1 community will visit five of the world's seven continents over the course of the year.</p>
+      
+      <p>In 2026, Ramadan will take place throughout February and March, meaning the Bahrain and Saudi Arabian Grands Prix will again be held in April.</p>
+      
+      <img src="img/racer/pofile_f1.jpg" width="50%" alt="F1 Profile">
+      
+      <p>The calendar sees further improvements to the geographical flow of races, including the Canadian Grand Prix now following Miami in an earlier slot from May 22-24, delivering significant freight efficiencies as some equipment can move directly from one event to the other.</p>
+      
+      <p>This change creates a consolidated European leg of the season across the summer months, beginning in Monaco from June 5-7 and finishing in Spain, where Madrid will make its F1 calendar debut from September 11-13.</p>
+      
+      <p>The championship then returns to Asia with the Azerbaijan and Singapore Grands Prix, ahead of a triple header in the Americas, before Las Vegas, Qatar and Abu Dhabi close out the season.</p>
+      
+      <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold;">The full 2026 F1 calendar can be viewed below:</p>
+      
+      <img src="img/racer/champan1.png" width="90%" style="border: 2px solid red;" alt="2026 Calendar">
+      
+      <p>Mohammed Ben Sulayem, President of the FIA, added: “Next year’s FIA Formula One World Championship marks a significant new chapter for our sport. A new race, new teams, and the arrival of new manufacturers, all ushering in a fresh era of innovation and competition.</p>
+      
+      <p>With 24 Grands Prix across five continents, the season truly reflects the global nature of our community, while the improved geographical flow of the calendar shows our joint commitment to making the championship more efficient and sustainable.</p>
+      
+      <p>The debut of Madrid, the arrival of iconic brands like Audi, Cadillac, and Ford, and the introduction of the next generation of F1 cars powered by 100% advanced sustainable fuels signal an exciting new era of racing.</p>
+      
+      <p>“My thanks to everyone involved in putting on this incredible season and in delivering a calendar that continues to drive the sport forward on all fronts. And, my thanks to the fans whose passion and unwavering support keep the spirit of our sport alive.”</p>
+      
+      <p>As in 2025, six of the 24 venues on the calendar will host F1 Sprint events. For the <span style="color: red;">2026 season they are China, Miami, Canada, Great Britain, the Netherlands and Singapore.</span></p>
+    </div>
+  </div>
+
+  <hr color="red" size="5px" width="80%" style="margin: 40px auto;">
+
+  <footer class="f1-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2 class="footer-logo">F1<span>HUB</span></h2>
+        <p>Your ultimate destination for motorsport news, telemetry data, and race weekend schedules.</p>
+        <div class="link_social">
+          <a href="https://www.facebook.com/share/18Qh47CpqL/"><img src="img/logo/fb.png" alt="facebook"></a>
+          <a href="https://www.tiktok.com/@tyzo92?_r=1&_t=ZS-97tOq0W3lMQ"><img src="img/logo/tiktok.png" alt="tiktok"></a>
+          <a href="https://t.me/HeaTy11"><img src="img/logo/tg1.png" alt="telegram"></a>
+          <a href="https://youtube.com/@tyzo_999?si=thQLvRNdyPQgLAPV"><img src="img/logo/youtube.png" alt="youtube"></a>
+        </div>
+      </div>
+      <div class="footer-links-grid">
+        <div class="footer-column">
+          <h3>THE GRID</h3>
+          <ul>
+            <li><a href="index_f1.html">Home</a></li>
+            <li><a href="ticket.html">Ticket</a></li>
+            <li><a href="team.html">Teams</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>RACE WEEKEND</h3>
+          <ul>
+            <li><a href="#champan">Champan</a></li>
+            <li><a href="model_f1.html">Model</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>PADDOCK</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 F1 Hub. Unofficial fan project.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

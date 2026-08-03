@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+body {
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.full_text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  font-family: "ROG Fonts STRIX SCAR", sans-serif;
+  background-color: black;
+  border: 1px solid red;
+  transition: all 0.1s ease-in-out;
+  z-index: 10;
+  transition: 0.4s;
+}
+.home2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.f1_index {
+  background: linear-gradient(135deg, red 5%, white 70%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.container {
+  text-align: start;
+  font-size: 50px;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline red;
+}
+.banner_wrapper {
+  position: relative;
+  width: 100%;
+}
+.container1 img {
+  height: 600px;
+  border: 2px solid red;
+  filter: brightness(0.65);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  object-fit: cover;
+}
+.img_top:hover {
+  transform: scale(1.02);
+}
+.container1 {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+.banner_text {
+  position: absolute; 
+  left: 15%; 
+  bottom: 26%; 
+  text-align: center; 
+  font-style: italic; 
+  font-size: 70px;
+}
+.section_title {
+  margin-left: 45px; 
+  font-size: 50px; 
+  font-family: Black Ops One; 
+  font-style: oblique;   
+  background: linear-gradient(135deg, red 5%, white 50%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.container2 {
+  margin-left: 25px;
+  width: 100%;
+  padding: 20px;
+  gap: 25px;
+  display: flex;
+}
+.container2 img {
+  width: 23%;
+  object-fit: cover;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+  filter: brightness(0.75);
+}
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover {
+  transform: scale(1.06);
+  filter: brightness(1);
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+.container2 img {
+  border-radius: 14px;
+  border: 1px solid red;
+}
+.text_header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+.text_header a {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.text_header a:hover {
+  transform: scale(1.2);
+}
+input {
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  width: 180px;
+  font-family: ROG Fonts STRIX SCAR;
+  border-radius: 50px;
+  outline: none;
+}
+.logo {
+  height: 60px;
+  width: auto;
+}
+.racer {
+  padding: 50px;
+}
+.racer2 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.616);
+  border: 1px solid red;
+  gap: 25px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+  color: orangered;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.racer3 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.616);
+  border: 1px solid #00ffe1;
+  gap: 25px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+  color: #00ffe1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.para {
+  color: white;
+  font-size: 25px;
+  padding: 25px;
+  margin-left: 50px;
+}
+.racer2 img {
+  transition: 0.3s ease;
+}
+.racer2 img:hover {
+  transform: scale(1.05);
+}
+.racer3 img {
+  transition: 0.3s;
+}
+.racer3 img:hover {
+  transform: scale(1.05);
+}
+.racer4 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.616);
+  border: 1px solid red;
+  gap: 25px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.text_1 {
+  font-size: 20px;
+  width: 100%;
+}
+.text_1 p {
+  margin: 5px;
+  margin-left: 65px;
+  padding: 1rem;
+  font-family: sans-serif;
+  font-size: 25px;
+  line-height: 1.6;
+}
+.inline_flex_text {
+  display: flex; 
+  gap: 25px;
+  align-items: center;
+}
+.home h1.video_title {
+  font-family: Black Ops One; 
+  margin-left: 80px; 
+  font-size: 50px; 
+  font-style: oblique;   
+  background: linear-gradient(135deg, red 5%, white 50%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.home2 video {
+  margin-left: 80px;
+}
+.f1-footer {
+  background-color: #111112;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  padding: 60px 0 20px 0;
+  border-top: 2px solid #e10600;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-brand {
+  flex: 1;
+  max-width: 300px;
+}
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.footer-logo span {
+  color: #e10600;
+}
+.footer-brand p {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.footer-links-grid {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-column {
+  text-align: left;
+}
+.footer-column h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-column li {
+  margin-bottom: 12px;
+}
+.footer-column a {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+.footer-column a:hover {
+  color: #e10600;
+}
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding: 20px 20px 0 20px;
+  border-top: 1px solid #27272a;
+  text-align: left;
+}
+.footer-bottom p {
+  color: #71717a;
+  font-size: 0.8rem;
+}
+.link_social img {
+  width: 30px;
+}
+.sponsor-container {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 18px;
+}
+.sponsor-wrapper {
+  width: 100%;
+  height: max-content;
+}
+@media (max-width: 1440px) {
+  .banner_text {
+    font-size: 50px;
+    bottom: 20%;
+  }
+}
+@media (max-width: 1023px) {
+  body {
+    margin-top: 110px;
+  }
+  .full_text {
+    height: auto;
+    padding: 10px 0;
+  }
+  .header_container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .text_header {
+    gap: 10px;
+  }
+  .text_header a {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .container1 img {
+    height: 400px;
+  }
+  .banner_text {
+    font-size: 32px;
+    left: 10%;
+    bottom: 15%;
+  }
+  .section_title, .home h1.video_title {
+    font-size: 35px;
+    margin-left: 25px;
+  }
+  .container2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .container2 img {
+    width: 45% !important;
+  }
+  .text_1 p {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .inline_flex_text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inline_flex_text img {
+    width: 100% !important;
+  }
+  .home2 video {
+    margin-left: 0;
+    width: 95%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .text_header input[type="text"] {
+    width: 140px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 150px;
+  }
+  .full_text {
+    height: auto;
+    min-height: 70px;
+    padding: 8px 0;
+  }
+  .header_container {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  .container1 h1 {
+    font-size: 30px !important;
+  }
+  .container1 {
+    position: relative !important;
+    padding: 10px !important;
+  }
+  .banner_text {
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
+    font-size: 18px !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+    padding: 0 10px !important;
+    line-height: 1.4 !important;
+  }
+  .container1 img {
+    height: 250px;
+  }
+  .inline_flex_text {
+    display: block !important;
+  }
+  .img5 {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 15px !important;
+    display: block !important;
+    border-radius: 25px !important;
+  }
+  .logo {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  .text_header {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    gap: 8px !important;
+  }
+  .text_header span {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .text_header input[type="text"] {
+    width: 85% !important;
+    padding: 5px 10px;
+    margin: 0 auto;
+  }
+  .text_header a {
+    font-size: 14px;
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+    padding: 2px 0;
+  }
+  .container2 {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 10px;
+    align-items: center;
+  }
+  .container2 img {
+    width: 100% !important;
+  }
+  .section_title {
+    font-size: 26px !important;
+    margin-left: 15px !important;
+  }
+  .text_1 p {
+    margin-left: 0;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.5;
+  }
+  .home {
+    margin-left: 0 !important;
+    padding: 0 15px;
+  }
+  .home h1.video_title {
+    font-size: 22px !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .home2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .home2 video {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .f1-footer {
+    padding: 20px 10px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+  .footer-brand {
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer-links-grid {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+  }
+  .footer-column {
+    text-align: start;
+  }
+  .footer-bottom {
+    text-align: start;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+}

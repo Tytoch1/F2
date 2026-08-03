@@ -9,120 +9,123 @@
 
 <body>
     <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
 
-    body {
-      animation: fadeInAnimation ease 0.5s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-      margin-top: 100px;
-      background-color: black;
-      color: white;
-      overflow-x: hidden;
-    }
+        body {
+            animation: fadeInAnimation ease 0.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            margin-top: 100px;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
 
-    .f1_text {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 50px;
-      background: linear-gradient(135deg, red 25%, white 90%, red 15%);
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+        .f1_text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+            background: linear-gradient(135deg, red 25%, white 90%, red 15%);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-    @keyframes fadeInAnimation {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
 
-    .full_text {
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      width: 100%;
-      height: 80px;
-      font-family: 'ROG Fonts STRIX SCAR', sans-serif;
-      background-color: black;
-      border-bottom: 1px solid red;
-      transition: all 0.1s ease-in-out;
-      overflow: hidden;
-      z-index: 10;
-    }
+            100% {
+                opacity: 1;
+            }
+        }
 
-    .container {
-      text-align: start;
-      font-size: 50px;
-      font-family: "Black Ops One", system-ui;
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: underline red;
-    }
+        .full_text {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            height: 80px;
+            font-family: 'ROG Fonts STRIX SCAR', sans-serif;
+            background-color: black;
+            border-bottom: 1px solid red;
+            transition: all 0.1s ease-in-out;
+            overflow: hidden;
+            z-index: 10;
+        }
 
-    .container1 img {
-      height: 600px;
-      border: 2px solid red;
-      filter: brightness(0.65);
-      transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+        .container {
+            text-align: start;
+            font-size: 50px;
+            font-family: "Black Ops One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: underline red;
+        }
 
-    .header_container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 30px;
-      width: 100%;
-    }
+        .container1 img {
+            height: 600px;
+            border: 2px solid red;
+            filter: brightness(0.65);
+            transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
 
-    .container2 img {
-      border-radius: 14px;
-      border: 1px solid red;
-    }
+        .header_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            width: 100%;
+        }
 
-    .text_header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
-    }
+        .container2 img {
+            border-radius: 14px;
+            border: 1px solid red;
+        }
 
-    .text_header a {
-      color: white;
-      font-size: 18px;
-      margin-left: 25px;
-      text-decoration: none;
-      transition: 0.2s;
-    }
+        .text_header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+        }
 
-    .text_header a:hover {
-      transform: scale(1.1);
-      color: red;
-    }
+        .text_header a {
+            color: white;
+            font-size: 18px;
+            margin-left: 25px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
 
-    input {
-      padding: .5rem 1rem;
-      border: 1px solid gray;
-      width: 180px;
-      font-family: 'ROG Fonts STRIX SCAR', sans-serif;
-      border-radius: 50px;
-      outline: none;
-      color: white;
-    }
-    .logo {
-      height: 60px;
-    }
+        .text_header a:hover {
+            transform: scale(1.1);
+            color: red;
+        }
+
+        input {
+            padding: .5rem 1rem;
+            border: 1px solid gray;
+            width: 180px;
+            font-family: 'ROG Fonts STRIX SCAR', sans-serif;
+            border-radius: 50px;
+            outline: none;
+            color: white;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
         .racer {
             padding: 50px;
         }
@@ -459,7 +462,7 @@
                 <img src="img/logo/logo_f1.jpg" alt="f1" class="logo">
                 <div class="text_header">
                     <span><input type="text" placeholder="Search .........."></span>
-                    <a href="index_f1.html">Home</a>
+          <a href="index.html">Home</a>
                     <a href="ticket.html" style="color: red;">Ticket</a>
                     <a href="team.html">Team</a>
                     <a href="chanpan.html" style="color: red;">Champan</a>

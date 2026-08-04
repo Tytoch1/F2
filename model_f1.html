@@ -348,18 +348,21 @@
             font-size: 0.8rem;
         }
 
-        @media (max-width: 1440px) and (min-width: 1024px) {
+        /* Responsive Breakpoints */
+
+        /* 1440px Breakpoint */
+        @media (max-width: 1440px) {
+            .container-team-1 {
+                max-width: 1200px;
+            }
+
             .text_header {
-                margin-left: 200px;
+                gap: 15px;
             }
         }
 
-        @media (max-width: 1023px) and (min-width: 768px) {
-            .text_header {
-                margin-left: 50px;
-                gap: 15px;
-            }
-
+        /* 1023px Breakpoint */
+        @media (max-width: 1023px) {
             .text_header a {
                 margin-left: 15px;
                 font-size: 16px;
@@ -367,10 +370,15 @@
 
             .text-text {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 25px;
+                gap: 30px;
+            }
+
+            .container-team-1 {
+                width: 92%;
             }
         }
 
+        /* 767px Breakpoint */
         @media (max-width: 767px) {
             body {
                 margin-top: 150px;
@@ -379,7 +387,7 @@
             .full_text {
                 height: auto;
                 min-height: 80px;
-                padding: 5px 0;
+                padding: 10px 0;
                 overflow: visible;
             }
 
@@ -390,19 +398,15 @@
             }
 
             .logo {
-                height: 60px;
+                height: 50px;
                 margin-bottom: 5px;
             }
 
             .text_header {
-                margin-left: 0 !important;
+                margin-left: 0;
                 justify-content: center;
                 gap: 10px;
                 width: 100%;
-            }
-
-            .text_header img {
-                display: none;
             }
 
             .text_header a {
@@ -411,7 +415,7 @@
             }
 
             input {
-                width: 130px;
+                width: 140px;
                 padding: 0.3rem 0.6rem;
             }
 
@@ -422,16 +426,7 @@
 
             .f1_model {
                 font-size: 32px;
-            }
-
-            .container-team-1>p {
-                font-size: 16px !important;
-                margin-bottom: 30px !important;
-            }
-
-            .text-text {
-                grid-template-columns: 1fr;
-                gap: 20px;
+                text-align: center;
             }
 
             .footer-container {
@@ -445,18 +440,75 @@
             }
 
             .footer-links-grid {
-                flex-direction: column;
-                gap: 20px;
+                flex-direction: row;
+                justify-content: space-around;
             }
 
             .footer-column {
                 text-align: center;
             }
+
+            .footer-bottom {
+                text-align: center;
+            }
         }
 
-        @media (max-width: 767px) {
+        /* 481px Breakpoint */
+        @media (min-width: 481px) and (max-width: 767px) {
+            .text-text {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        /* 480px Breakpoint */
+        @media (max-width: 480px) {
             body {
-                margin-top: 170px;
+                margin-top: 175px;
+            }
+
+            .logo {
+                height: 40px;
+            }
+
+            .text_header a {
+                margin-left: 4px;
+                margin-right: 4px;
+                font-size: 12px;
+            }
+
+            input {
+                width: 120px;
+                font-size: 12px;
+            }
+
+            .f1_model {
+                font-size: 24px;
+            }
+
+            .text-text {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .container-team {
+                height: 200px;
+            }
+
+            .text-model {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .f1-button {
+                width: 160px;
+                height: 36px;
+                font-size: 12px;
+            }
+
+            .footer-links-grid {
+                flex-direction: column;
+                gap: 20px;
             }
         }
     </style>

@@ -89,7 +89,8 @@
 
     .about-wrapper {
       width: 85%;
-      height: 400px;
+      min-height: 400px;
+      height: auto;
       max-width: 1000px;
       margin: 0 auto 40px auto;
       background: #1e1e1e;
@@ -327,7 +328,16 @@
       color: #71717a;
       font-size: 0.8rem;
     }
+    @media (max-width: 1440px) {
+      .about-wrapper,
+      .container-anima {
+        max-width: 950px;
+      }
 
+      .footer-container {
+        max-width: 1100px;
+      }
+    }
     @media (max-width: 1023px) {
       .text_header a {
         margin-left: 15px;
@@ -338,8 +348,18 @@
       .container-anima {
         width: 90%;
       }
+
+      .about-content {
+        gap: 25px;
+      }
+
+      .profile-card img {
+        width: 200px;
+        height: 250px;
+      }
     }
 
+    /* Mobile Landscape & Small Tablets (Up to 767px) */
     @media (max-width: 767px) {
       body {
         margin-top: 150px;
@@ -442,6 +462,89 @@
 
       .footer-bottom {
         text-align: center;
+      }
+    }
+
+    /* Intermediate Mobile Breakpoint (Between 481px and 767px) */
+    @media (min-width: 481px) and (max-width: 767px) {
+      .footer-links-grid {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .footer-column {
+        text-align: left;
+      }
+    }
+
+    /* Small Mobile Devices (Up to 480px) */
+    @media (max-width: 480px) {
+      body {
+        margin-top: 175px;
+      }
+
+      .header_container {
+        padding: 5px;
+      }
+
+      .text_header a {
+        font-size: 12px;
+        margin-left: 3px !important;
+        margin-right: 3px !important;
+      }
+
+      .text_header input[type="text"] {
+        width: 90% !important;
+        padding: 0.4rem 0.8rem;
+        font-size: 12px;
+      }
+
+      .section-title {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      div[style*="margin: 40px auto 20px auto"] {
+        text-align: center;
+      }
+
+      .about-wrapper,
+      .container-anima {
+        width: 95%;
+        padding: 15px;
+      }
+
+      .profile-card img {
+        width: 150px;
+        height: 190px;
+      }
+
+      .profile-info {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .container-anima h2 {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .bio-description {
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .thank h1 {
+        font-size: 28px;
+      }
+
+      .footer-logo {
+        font-size: 1.2rem;
+      }
+
+      .link_social a img {
+        width: 30px;
+        height: 30px;
       }
     }
   </style>

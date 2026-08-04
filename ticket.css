@@ -182,6 +182,7 @@ input {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2%;
+  padding: 0 20px;
 }
 .f1-card {
   margin-top: 50px;
@@ -196,6 +197,8 @@ input {
     transform 0.3s ease,
     box-shadow 0.3s ease;
   border-bottom: 4px solid #e10600;
+  display: flex;
+  flex-direction: column;
 }
 .f1-card:hover {
   transform: translateY(-10px);
@@ -209,15 +212,15 @@ input {
 }
 .driver-img {
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 .order {
   font-family: "Black Ops One", system-ui;
-  padding: 5px;
-  font-size: 20px;
-  margin-left: 25%;
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 100%;
   background: linear-gradient(135deg, #e10600 0%, #b30500 100%);
   border: 1px solid #ff4d4d;
   font-weight: 800;
@@ -228,6 +231,8 @@ input {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 0 4px 0 #8b0400;
   position: relative;
+  margin-top: auto;
+  border-radius: 6px;
 }
 .order:hover {
   background: #ff1810;
@@ -243,6 +248,9 @@ input {
 }
 .card-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .team-badge {
   font-size: 0.75rem;
@@ -260,7 +268,7 @@ input {
 .stats-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 .stats-list li {
   font-size: 0.85rem;
@@ -417,6 +425,7 @@ input {
   color: #71717a;
   font-size: 0.8rem;
 }
+
 @media (max-width: 1280px) {
   .text_header {
     margin-left: 150px;
@@ -428,6 +437,7 @@ input {
     width: 45%;
   }
 }
+
 @media (max-width: 1023px) {
   .text_header {
     margin-left: 20px;
@@ -436,11 +446,14 @@ input {
     display: none;
   }
   .text_header a {
-    margin-left: 20px;
-    font-size: 17px;
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  input {
+    width: 140px;
   }
   .f1-card {
-    width: 48%;
+    width: 46%;
   }
   .footer-container {
     flex-wrap: wrap;
@@ -449,7 +462,7 @@ input {
 
 @media (max-width: 767px) {
   body {
-    margin-top: 140px;
+    margin-top: 150px;
   }
   .full_text {
     height: auto;
@@ -460,45 +473,48 @@ input {
     flex-direction: column;
     align-items: center;
     padding: 5px 10px;
+    gap: 10px;
   }
   .logo {
-    height: 50px;
+    height: 45px;
+    margin-bottom: 2px;
   }
   .text_header {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
     margin-left: 0 !important;
-    gap: 8px !important;
-    margin-top: 10px;
   }
-  .text_header img {
-    display: none;
+  .text_header span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
   }
-  .text_header a {
-    font-size: 14px;
-    margin-left: 8px !important;
-    margin-right: 8px !important;
-    padding: 2px 0;
+  .text_header input[type="text"] {
+    width: 80% !important;
   }
-  input {
-    width: 85% !important;
-    margin: 0 auto;
-  }
+        .text_header a {
+        margin-left: 6px !important;
+        margin-right: 6px !important;
+        font-size: 14px;
+      }
+
   .racer {
-    padding: 20px 10px;
+    padding: 20px 15px;
   }
   .text_d {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 150px;
+  }
+  .f1-card-container {
+    padding: 0 15px;
+    gap: 20px;
   }
   .f1-card {
     width: 100% !important;
     max-width: 100%;
-    margin-top: 25px;
+    margin-top: 20px;
   }
   .order {
     margin-left: 0 !important;
@@ -511,5 +527,45 @@ input {
   .footer-links-grid {
     flex-direction: column;
     gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    margin-top: 155px;
+  }
+  .text_d {
+    font-size: 24px;
+    margin-top: 150px;
+  }
+  .racer p {
+    font-size: 16px !important;
+  }
+  .logo {
+    height: 40px;
+  }
+  .text_header a {
+    font-size: 11px;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+  }
+  input {
+    width: 95% !important;
+    font-size: 12px;
+    padding: 0.3rem 0.6rem;
+  }
+  .card-content {
+    padding: 15px;
+  }
+  .driver-name {
+    font-size: 1.25rem;
+  }
+  .stats-list li {
+    font-size: 0.8rem;
+  }
+  .f1-footer {
+    padding: 40px 0 15px 0;
+  }
+  .link_social img {
+    width: 14% !important;
   }
 }

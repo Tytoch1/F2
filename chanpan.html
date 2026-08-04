@@ -275,69 +275,196 @@
       color: #71717A;
       font-size: 0.8rem;
     }
-
-    /* Responsive Queries */
-    @media (max-width: 1023px) {
-      .text_header a {
-        margin-left: 15px;
-        font-size: 16px;
-      }
-      .text-champan {
-        width: 85%;
-      }
-    }
-
-    @media (max-width: 767px) {
-      body {
-        margin-top: 130px;
-      }
-      .full_text {
-        height: auto;
-        padding: 10px 0;
-      }
-      .header_container {
-        flex-direction: column;
-        gap: 15px;
-      }
-      .text_header {
-        justify-content: center;
-        gap: 8px;
-        width: 100%;
-      }
-      .text_header a {
-        margin-left: 8px;
-        font-size: 14px;
-      }
-      input {
-        width: 140px;
-      }
-      .f1_text {
-        font-size: 32px;
-      }
-      .Container-champan p {
-        font-size: 18px !important;
-      }
-      .text-champan {
-        width: 90% !important;
-        font-size: 16px;
-        line-height: 24px;
-      }
-      .footer-container {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-      }
-      .footer-links-grid {
-        flex-direction: column;
-        gap: 20px;
-      }
-      .footer-column {
-        text-align: center;
-      }
-      .footer-bottom {
-        text-align: center;
-      }
-    }
+@media (max-width: 1440px) {
+  .banner_text {
+    font-size: 50px;
+    bottom: 20%;
+  }
+  .text_d {
+    font-size: 42px;
+  }
+  .f1-card-container {
+    gap: 1.5%;
+  }
+}
+@media (max-width: 1280px) {
+  .text_header {
+    gap: 15px;
+  }
+  .f1-card {
+    width: 45%;
+  }
+}
+@media (max-width: 1023px) {
+  body {
+    margin-top: 200px !important;
+  }
+  .full_text {
+    height: auto;
+    padding: 10px 0;
+  }
+  .header_container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .text_header {
+    gap: 10px;
+  }
+  .text_header a {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .container1 img {
+    height: 400px;
+  }
+  .banner_text {
+    font-size: 32px;
+    left: 10%;
+    bottom: 15%;
+  }
+  .section_title, 
+  .home h1.video_title {
+    font-size: 35px;
+    margin-left: 25px;
+  }
+  .container2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .container2 img {
+    width: 45% !important;
+  }
+  .text_1 p {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .inline_flex_text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inline_flex_text img {
+    width: 100% !important;
+  }
+  .home2 video {
+    margin-left: 0;
+    width: 95%;
+  }
+  .f1-card {
+    width: 46%;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    margin-top: 1150px !important;
+  }
+  .full_text {
+    height: auto;
+    min-height: 70px;
+    padding: 8px 0;
+  }
+  .header_container {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+  }
+  .logo {
+    height: 45px;
+    margin-bottom: 2px;
+  }
+  .text_header {
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .text_header span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .text_header input[type="text"] {
+    width: 80% !important;
+  }
+  .text_header a {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+    font-size: 14px;
+  }
+  .racer {
+    padding: 20px 15px;
+  }
+  .text_d {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .f1-card-container {
+    padding: 0 15px;
+    gap: 20px;
+  }
+  .f1-card {
+    width: 100% !important;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .order {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-links-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    margin-top: 150px !important;
+  }
+  .text_d {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .racer p {
+    font-size: 16px !important;
+  }
+  .logo {
+    height: 40px;
+  }
+  .text_header a {
+    font-size: 11px;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+  }
+  input {
+    width: 95% !important;
+    font-size: 12px;
+    padding: 0.3rem 0.6rem;
+  }
+  .card-content {
+    padding: 15px;
+  }
+  .f1-card-container{
+    padding: 50px;
+  }
+  .driver-name {
+    font-size: 1.25rem;
+  }
+  .stats-list li {
+    font-size: 0.8rem;
+  }
+  .f1-footer {
+    padding: 40px 0 15px 0;
+  }
+  }
   </style>
 
   <header>

@@ -66,7 +66,7 @@ body {
   transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .img_top:hover {
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 .container1 {
   width: 100%;
@@ -425,32 +425,80 @@ input {
   color: #71717a;
   font-size: 0.8rem;
 }
-
+@media (max-width: 1440px) {
+  .banner_text {
+    font-size: 50px;
+    bottom: 20%;
+  }
+  .text_d {
+    font-size: 42px;
+  }
+  .f1-card-container {
+    gap: 1.5%;
+  }
+}
 @media (max-width: 1280px) {
   .text_header {
-    margin-left: 150px;
-  }
-  .text_header img {
-    margin-right: 20%;
+    gap: 15px;
   }
   .f1-card {
     width: 45%;
   }
 }
-
 @media (max-width: 1023px) {
-  .text_header {
-    margin-left: 20px;
+  body {
+    margin-top: 200px !important;
   }
-  .text_header img {
-    display: none;
+  .full_text {
+    height: auto;
+    padding: 10px 0;
+  }
+  .header_container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .text_header {
+    gap: 10px;
   }
   .text_header a {
-    margin-left: 15px;
-    font-size: 15px;
+    font-size: 16px;
+    margin-left: 10px;
   }
-  input {
-    width: 140px;
+  .container1 img {
+    height: 400px;
+  }
+  .banner_text {
+    font-size: 32px;
+    left: 10%;
+    bottom: 15%;
+  }
+  .section_title, 
+  .home h1.video_title {
+    font-size: 35px;
+    margin-left: 25px;
+  }
+  .container2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .container2 img {
+    width: 45% !important;
+  }
+  .text_1 p {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .inline_flex_text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inline_flex_text img {
+    width: 100% !important;
+  }
+  .home2 video {
+    margin-left: 0;
+    width: 95%;
   }
   .f1-card {
     width: 46%;
@@ -459,10 +507,9 @@ input {
     flex-wrap: wrap;
   }
 }
-
 @media (max-width: 767px) {
   body {
-    margin-top: 150px;
+    margin-top: 1150px !important;
   }
   .full_text {
     height: auto;
@@ -494,18 +541,17 @@ input {
   .text_header input[type="text"] {
     width: 80% !important;
   }
-        .text_header a {
-        margin-left: 6px !important;
-        margin-right: 6px !important;
-        font-size: 14px;
-      }
-
+  .text_header a {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+    font-size: 14px;
+  }
   .racer {
     padding: 20px 15px;
   }
   .text_d {
     font-size: 30px;
-    margin-top: 150px;
+    margin-top: 20px;
   }
   .f1-card-container {
     padding: 0 15px;
@@ -531,11 +577,11 @@ input {
 }
 @media (max-width: 480px) {
   body {
-    margin-top: 155px;
+    margin-top: 150px !important;
   }
   .text_d {
     font-size: 24px;
-    margin-top: 150px;
+    margin-top: 15px;
   }
   .racer p {
     font-size: 16px !important;
@@ -555,6 +601,9 @@ input {
   }
   .card-content {
     padding: 15px;
+  }
+  .f1-card-container{
+    padding: 50px;
   }
   .driver-name {
     font-size: 1.25rem;

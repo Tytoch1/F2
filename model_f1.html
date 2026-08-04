@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model Sell</title>
-</head>
-
-<body>
     <style>
         * {
             margin: 0;
@@ -98,20 +95,23 @@
             align-items: center;
             gap: 10px;
         }
-
-        .text_header a {
-            color: white;
-            font-size: 18px;
-            margin-left: 25px;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-
-        .text_header a:hover {
-            transform: scale(1.1);
-            color: red;
-        }
-
+.text_header a {
+  color: white;
+  font-size: 20px;
+  margin-left: 45px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.text_header a:hover {
+  transform: scale(1.2);
+  color: red;
+}
+.text_header .kit {
+  color: red;
+}
+.text_header .kit:hover {
+  color: white;
+}
         input {
             padding: .5rem 1rem;
             border: 1px solid gray;
@@ -128,39 +128,6 @@
 
         .racer {
             padding: 50px;
-        }
-
-        .racer2 {
-            display: flex;
-            width: 100%;
-            background-color: rgba(28, 28, 28, 0.616);
-            border: 1px solid red;
-            gap: 25px;
-            padding: 10px;
-            margin-top: 50px;
-            font-size: 35px;
-            color: orangered;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .racer3 {
-            display: flex;
-            width: 100%;
-            background-color: rgba(28, 28, 28, 0.616);
-            border: 1px solid #00ffe1;
-            gap: 25px;
-            padding: 10px;
-            margin-top: 50px;
-            font-size: 35px;
-            color: #00ffe1;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .para {
-            color: white;
-            font-size: 25px;
-            padding: 25px;
-            margin-left: 50px;
         }
 
         .container-team-1 {
@@ -349,36 +316,46 @@
         }
 
         /* Responsive Breakpoints */
-
-        /* 1440px Breakpoint */
-        @media (max-width: 1440px) {
-            .container-team-1 {
-                max-width: 1200px;
-            }
-
+        @media (max-width: 1280px) {
             .text_header {
                 gap: 15px;
             }
         }
 
-        /* 1023px Breakpoint */
         @media (max-width: 1023px) {
-            .text_header a {
-                margin-left: 15px;
-                font-size: 16px;
+            body {
+                margin-top: 110px;
+            }
+
+            .full_text {
+                height: auto;
+                padding: 10px 0;
             }
 
             .text-text {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
+                gap: 20px;
             }
 
-            .container-team-1 {
-                width: 92%;
+            .header_container {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .text_header {
+                gap: 10px;
+            }
+
+            .text_header a {
+                font-size: 16px;
+                margin-left: 10px;
+            }
+
+            .footer-container {
+                flex-wrap: wrap;
             }
         }
 
-        /* 767px Breakpoint */
         @media (max-width: 767px) {
             body {
                 margin-top: 150px;
@@ -386,85 +363,68 @@
 
             .full_text {
                 height: auto;
-                min-height: 80px;
-                padding: 10px 0;
-                overflow: visible;
+                min-height: 70px;
+                padding: 8px 0;
             }
 
             .header_container {
                 flex-direction: column;
                 align-items: center;
-                padding: 5px;
+                padding: 5px 10px;
+                gap: 10px;
             }
 
             .logo {
-                height: 50px;
-                margin-bottom: 5px;
+                height: 45px;
+                margin-bottom: 2px;
             }
 
             .text_header {
-                margin-left: 0;
                 justify-content: center;
-                gap: 10px;
+                gap: 8px;
                 width: 100%;
+                margin-left: 0 !important;
             }
 
-            .text_header a {
-                margin-left: 10px;
-                font-size: 14px;
+            .text_header span {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 4px;
             }
 
-            input {
-                width: 140px;
-                padding: 0.3rem 0.6rem;
+            .text_header input[type="text"] {
+                width: 80% !important;
             }
 
-            .container-team-1 {
-                width: 95%;
-                margin: 15px auto;
+            .text-text {
+                grid-template-columns: 1fr;
+                gap: 25px;
             }
-
-            .f1_model {
-                font-size: 32px;
-                text-align: center;
-            }
-
+            
             .footer-container {
                 flex-direction: column;
                 gap: 30px;
-                text-align: center;
-            }
-
-            .footer-brand {
-                max-width: 100%;
             }
 
             .footer-links-grid {
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .footer-column {
-                text-align: center;
-            }
-
-            .footer-bottom {
-                text-align: center;
-            }
-        }
-
-        /* 481px Breakpoint */
-        @media (min-width: 481px) and (max-width: 767px) {
-            .text-text {
-                grid-template-columns: repeat(2, 1fr);
+                flex-direction: column;
                 gap: 20px;
             }
         }
 
-        /* 480px Breakpoint */
         @media (max-width: 480px) {
             body {
-                margin-top: 175px;
+                margin-top: 180px !important;
+                text-align: center;
+            }
+
+            .f1_model {
+                font-size: 24px;
+            }
+
+            .container-team-1 p {
+                font-size: 14px !important;
             }
 
             .logo {
@@ -472,46 +432,30 @@
             }
 
             .text_header a {
-                margin-left: 4px;
-                margin-right: 4px;
+                font-size: 11px;
+                margin-left: 4px !important;
+                margin-right: 4px !important;
+            }
+            .text_header input[type="text"] {
+                width: 95% !important;
                 font-size: 12px;
+                padding: 0.3rem 0.6rem;
             }
-
-            input {
-                width: 120px;
-                font-size: 12px;
-            }
-
-            .f1_model {
-                font-size: 24px;
-            }
-
             .text-text {
-                grid-template-columns: 1fr;
-                gap: 20px;
+                padding: 30px;
+            }
+            .f1-footer {
+                padding: 40px 0 15px 0;
             }
 
-            .container-team {
-                height: 200px;
-            }
-
-            .text-model {
-                font-size: 18px;
-                padding: 10px;
-            }
-
-            .f1-button {
-                width: 160px;
-                height: 36px;
-                font-size: 12px;
-            }
-
-            .footer-links-grid {
-                flex-direction: column;
-                gap: 20px;
+            .link_social img {
+                width: 14% !important;
             }
         }
     </style>
+</head>
+
+<body>
 
     <header>
         <div class="full_text">
@@ -520,11 +464,11 @@
                 <div class="text_header">
                     <span><input type="text" placeholder="Search .........."></span>
                     <a href="index.html">Home</a>
-                    <a href="ticket.html" style="color: red;">Ticket</a>
+                    <a href="ticket.html" class="kit">Ticket</a>
                     <a href="team.html">Team</a>
-                    <a href="chanpan.html" style="color: red;">Champan</a>
+                    <a href="chanpan.html" class="kit">Champan</a>
                     <a href="#model">Model</a>
-                    <a href="about.html" style="color: red;">About</a>
+                    <a href="about.html" class="kit">About</a>
                 </div>
             </div>
         </div>
@@ -617,6 +561,7 @@
         </div>
     </div>
     <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
+    
     <footer class="f1-footer">
         <div class="footer-container">
             <div class="footer-brand">

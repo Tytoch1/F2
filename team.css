@@ -58,12 +58,19 @@ body {
 .text_header a {
   color: white;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 45px;
   text-decoration: none;
   transition: 0.2s;
 }
 .text_header a:hover {
   transform: scale(1.2);
+  color: red;
+}
+.text_header .kit {
+  color: red;
+}
+.text_header .kit:hover {
+  color: white;
 }
 input {
   padding: 0.5rem 1rem;

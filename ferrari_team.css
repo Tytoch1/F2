@@ -67,12 +67,19 @@ body {
 .text_header a {
   color: white;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 45px;
   text-decoration: none;
   transition: 0.2s;
 }
 .text_header a:hover {
   transform: scale(1.2);
+  color: red;
+}
+.text_header .kit {
+  color: red;
+}
+.text_header .kit:hover {
+  color: white;
 }
 input {
   padding: 0.5rem 1rem;
@@ -290,15 +297,10 @@ input {
   flex-wrap: wrap;
   padding: 0 20px;
 }
-
-/* ==========================================================
-   RESPONSIVE BREAKPOINTS (Laptop, MacBook, Tablet, All Phones)
-   ========================================================== */
-
-/* Tablets & Laptops (max-width: 1023px) */
 @media (max-width: 1023px) {
   body {
-    margin-top: 110px;
+    margin-top: 200px;
+    text-align: center;
   }
   .full_text {
     height: auto;
@@ -330,11 +332,10 @@ input {
     width: 90%;
   }
 }
-
-/* Mobile Phones (max-width: 480px) */
 @media (max-width: 480px) {
   body {
     margin-top: 150px;
+    text-align: center;
   }
   .full_text {
     height: auto;
@@ -396,6 +397,7 @@ input {
     line-height: 24px;
     margin-left: 10px;
     width: 95%;
+    list-style-type: none;
   }
   .f1-card {
     width: 100% !important;

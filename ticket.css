@@ -129,6 +129,13 @@ body {
 }
 .text_header a:hover {
   transform: scale(1.2);
+  color: red;
+}
+.text_header .kit {
+  color: red;
+}
+.text_header .kit:hover {
+  color: white;
 }
 input {
   padding: 0.5rem 1rem;

@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'MyCustomFont';
+  /* If style.css is in a 'css' folder, go up one level first: */
+  src: url('../fonts/font-file.woff2') format('woff2');
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;

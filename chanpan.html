@@ -15,6 +15,12 @@
       box-sizing: border-box;
     }
 
+    @font-face {
+      font-family: 'MyCustomFont';
+      /* If style.css is in a 'css' folder, go up one level first: */
+      src: url('../fonts/font-file.woff2') format('woff2');
+    }
+
     html {
       scroll-behavior: smooth;
       scroll-padding-top: 80px;
@@ -42,6 +48,7 @@
       0% {
         opacity: 0;
       }
+
       100% {
         opacity: 1;
       }
@@ -110,12 +117,15 @@
       transform: scale(1.1);
       color: red;
     }
-    .text_header .kit{
+
+    .text_header .kit {
       color: red;
     }
+
     .text_header .kit:hover {
       color: white;
     }
+
     input {
       padding: .5rem 1rem;
       border: 1px solid gray;
@@ -124,6 +134,7 @@
       border-radius: 50px;
       outline: none;
     }
+
     .logo {
       height: 60px;
     }
@@ -279,196 +290,243 @@
       color: #71717A;
       font-size: 0.8rem;
     }
-@media (max-width: 1440px) {
-  .banner_text {
-    font-size: 50px;
-    bottom: 20%;
-  }
-  .text_d {
-    font-size: 42px;
-  }
-  .f1-card-container {
-    gap: 1.5%;
-  }
-}
-@media (max-width: 1280px) {
-  .text_header {
-    gap: 15px;
-  }
-  .f1-card {
-    width: 45%;
-  }
-}
-@media (max-width: 1023px) {
-  body {
-    margin-top: 200px !important;
-  }
-  .full_text {
-    height: auto;
-    padding: 10px 0;
-  }
-  .header_container {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  .text_header {
-    gap: 10px;
-  }
-  .text_header a {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-  .container1 img {
-    height: 400px;
-  }
-  .banner_text {
-    font-size: 32px;
-    left: 10%;
-    bottom: 15%;
-  }
-  .section_title, 
-  .home h1.video_title {
-    font-size: 35px;
-    margin-left: 25px;
-  }
-  .container2 {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 0;
-  }
-  .container2 img {
-    width: 45% !important;
-  }
-  .text_1 p {
-    font-size: 20px;
-    margin-left: 20px;
-  }
-  .inline_flex_text {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .inline_flex_text img {
-    width: 100% !important;
-  }
-  .home2 video {
-    margin-left: 0;
-    width: 95%;
-  }
-  .f1-card {
-    width: 46%;
-  }
-  .footer-container {
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    margin-top: 1150px !important;
-  }
-  .full_text {
-    height: auto;
-    min-height: 70px;
-    padding: 8px 0;
-  }
-  .header_container {
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
-    gap: 10px;
-  }
-  .logo {
-    height: 45px;
-    margin-bottom: 2px;
-  }
-  .text_header {
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    margin-left: 0 !important;
-  }
-  .text_header span {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4px;
-  }
-  .text_header input[type="text"] {
-    width: 80% !important;
-  }
-  .text_header a {
-    margin-left: 6px !important;
-    margin-right: 6px !important;
-    font-size: 14px;
-  }
-  .racer {
-    padding: 20px 15px;
-  }
-  .text_d {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-  .f1-card-container {
-    padding: 0 15px;
-    gap: 20px;
-  }
-  .f1-card {
-    width: 100% !important;
-    max-width: 100%;
-    margin-top: 20px;
-  }
-  .order {
-    margin-left: 0 !important;
-    width: 100%;
-  }
-  .footer-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .footer-links-grid {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-@media (max-width: 480px) {
-  body {
-    margin-top: 150px !important;
-  }
-  .text_d {
-    font-size: 24px;
-    margin-top: 15px;
-  }
-  .racer p {
-    font-size: 16px !important;
-  }
-  .logo {
-    height: 40px;
-  }
-  .text_header a {
-    font-size: 11px;
-    margin-left: 4px !important;
-    margin-right: 4px !important;
-  }
-  input {
-    width: 95% !important;
-    font-size: 12px;
-    padding: 0.3rem 0.6rem;
-  }
-  .card-content {
-    padding: 15px;
-  }
-  .f1-card-container{
-    padding: 50px;
-  }
-  .driver-name {
-    font-size: 1.25rem;
-  }
-  .stats-list li {
-    font-size: 0.8rem;
-  }
-  .f1-footer {
-    padding: 40px 0 15px 0;
-  }
-  }
+
+    @media (max-width: 1440px) {
+      .banner_text {
+        font-size: 50px;
+        bottom: 20%;
+      }
+
+      .text_d {
+        font-size: 42px;
+      }
+
+      .f1-card-container {
+        gap: 1.5%;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      .text_header {
+        gap: 15px;
+      }
+
+      .f1-card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      body {
+        margin-top: 200px !important;
+      }
+
+      .full_text {
+        height: auto;
+        padding: 10px 0;
+      }
+
+      .header_container {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .text_header {
+        gap: 10px;
+      }
+
+      .text_header a {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+
+      .container1 img {
+        height: 400px;
+      }
+
+      .banner_text {
+        font-size: 32px;
+        left: 10%;
+        bottom: 15%;
+      }
+
+      .section_title,
+      .home h1.video_title {
+        font-size: 35px;
+        margin-left: 25px;
+      }
+
+      .container2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+      }
+
+      .container2 img {
+        width: 45% !important;
+      }
+
+      .text_1 p {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+
+      .inline_flex_text {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .inline_flex_text img {
+        width: 100% !important;
+      }
+
+      .home2 video {
+        margin-left: 0;
+        width: 95%;
+      }
+
+      .f1-card {
+        width: 46%;
+      }
+
+      .footer-container {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        margin-top: 1150px !important;
+      }
+
+      .full_text {
+        height: auto;
+        min-height: 70px;
+        padding: 8px 0;
+      }
+
+      .header_container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
+        gap: 10px;
+      }
+
+      .logo {
+        height: 45px;
+        margin-bottom: 2px;
+      }
+
+      .text_header {
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        margin-left: 0 !important;
+      }
+
+      .text_header span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4px;
+      }
+
+      .text_header input[type="text"] {
+        width: 80% !important;
+      }
+
+      .text_header a {
+        margin-left: 6px !important;
+        margin-right: 6px !important;
+        font-size: 14px;
+      }
+
+      .racer {
+        padding: 20px 15px;
+      }
+
+      .text_d {
+        font-size: 30px;
+        margin-top: 20px;
+      }
+
+      .f1-card-container {
+        padding: 0 15px;
+        gap: 20px;
+      }
+
+      .f1-card {
+        width: 100% !important;
+        max-width: 100%;
+        margin-top: 20px;
+      }
+
+      .order {
+        margin-left: 0 !important;
+        width: 100%;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .footer-links-grid {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        margin-top: 150px !important;
+      }
+
+      .text_d {
+        font-size: 24px;
+        margin-top: 15px;
+      }
+
+      .racer p {
+        font-size: 16px !important;
+      }
+
+      .logo {
+        height: 40px;
+      }
+
+      .text_header a {
+        font-size: 11px;
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+      }
+
+      input {
+        width: 95% !important;
+        font-size: 12px;
+        padding: 0.3rem 0.6rem;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .f1-card-container {
+        padding: 50px;
+      }
+
+      .driver-name {
+        font-size: 1.25rem;
+      }
+
+      .stats-list li {
+        font-size: 0.8rem;
+      }
+
+      .f1-footer {
+        padding: 40px 0 15px 0;
+      }
+    }
   </style>
 
   <header>
@@ -491,41 +549,60 @@
   <div class="container-champan-1" id="champan">
     <div class="Container-champan">
       <h1 class="f1_text">Formula 1 reveals calendar for 2026 season</h1>
-      <p style="font-size: 25px; margin-top: 20px;">The 2026 season's races have been revealed in full, with drivers and teams set to embark on another 24-round campaign.</p>
+      <p style="font-size: 25px; margin-top: 20px;">The 2026 season's races have been revealed in full, with drivers and
+        teams set to embark on another 24-round campaign.</p>
     </div>
-    
+
     <div class="champan-image">
       <img src="img/racer/champan.avif" alt="champan">
     </div>
 
     <div class="text-champan">
-      <p>Formula 1 and the FIA have announced the calendar for the 2026 FIA Formula One World Championship, with drivers and teams set to embark on another 24-round campaign as new technical regulations and advanced sustainable fuels come into play.</p>
-      
-      <p>Starting with the Australian Grand Prix on the weekend of March 6-8 and concluding with the Abu Dhabi Grand Prix from December 4-6, the F1 community will visit five of the world's seven continents over the course of the year.</p>
-      
-      <p>In 2026, Ramadan will take place throughout February and March, meaning the Bahrain and Saudi Arabian Grands Prix will again be held in April.</p>
-      
+      <p>Formula 1 and the FIA have announced the calendar for the 2026 FIA Formula One World Championship, with drivers
+        and teams set to embark on another 24-round campaign as new technical regulations and advanced sustainable fuels
+        come into play.</p>
+
+      <p>Starting with the Australian Grand Prix on the weekend of March 6-8 and concluding with the Abu Dhabi Grand
+        Prix from December 4-6, the F1 community will visit five of the world's seven continents over the course of the
+        year.</p>
+
+      <p>In 2026, Ramadan will take place throughout February and March, meaning the Bahrain and Saudi Arabian Grands
+        Prix will again be held in April.</p>
+
       <img src="img/racer/pofile_f1.jpg" width="100%" alt="F1 Profile">
-      
-      <p>The calendar sees further improvements to the geographical flow of races, including the Canadian Grand Prix now following Miami in an earlier slot from May 22-24, delivering significant freight efficiencies as some equipment can move directly from one event to the other.</p>
-      
-      <p>This change creates a consolidated European leg of the season across the summer months, beginning in Monaco from June 5-7 and finishing in Spain, where Madrid will make its F1 calendar debut from September 11-13.</p>
-      
-      <p>The championship then returns to Asia with the Azerbaijan and Singapore Grands Prix, ahead of a triple header in the Americas, before Las Vegas, Qatar and Abu Dhabi close out the season.</p>
-      
-      <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold;">The full 2026 F1 calendar can be viewed below:</p>
-      
+
+      <p>The calendar sees further improvements to the geographical flow of races, including the Canadian Grand Prix now
+        following Miami in an earlier slot from May 22-24, delivering significant freight efficiencies as some equipment
+        can move directly from one event to the other.</p>
+
+      <p>This change creates a consolidated European leg of the season across the summer months, beginning in Monaco
+        from June 5-7 and finishing in Spain, where Madrid will make its F1 calendar debut from September 11-13.</p>
+
+      <p>The championship then returns to Asia with the Azerbaijan and Singapore Grands Prix, ahead of a triple header
+        in the Americas, before Las Vegas, Qatar and Abu Dhabi close out the season.</p>
+
+      <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold;">The full
+        2026 F1 calendar can be viewed below:</p>
+
       <img src="img/racer/champan1.png" width="90%" style="border: 2px solid red;" alt="2026 Calendar">
-      
-      <p>Mohammed Ben Sulayem, President of the FIA, added: “Next year’s FIA Formula One World Championship marks a significant new chapter for our sport. A new race, new teams, and the arrival of new manufacturers, all ushering in a fresh era of innovation and competition.</p>
-      
-      <p>With 24 Grands Prix across five continents, the season truly reflects the global nature of our community, while the improved geographical flow of the calendar shows our joint commitment to making the championship more efficient and sustainable.</p>
-      
-      <p>The debut of Madrid, the arrival of iconic brands like Audi, Cadillac, and Ford, and the introduction of the next generation of F1 cars powered by 100% advanced sustainable fuels signal an exciting new era of racing.</p>
-      
-      <p>“My thanks to everyone involved in putting on this incredible season and in delivering a calendar that continues to drive the sport forward on all fronts. And, my thanks to the fans whose passion and unwavering support keep the spirit of our sport alive.”</p>
-      
-      <p>As in 2025, six of the 24 venues on the calendar will host F1 Sprint events. For the <span class="kit">2026 season they are China, Miami, Canada, Great Britain, the Netherlands and Singapore.</span></p>
+
+      <p>Mohammed Ben Sulayem, President of the FIA, added: “Next year’s FIA Formula One World Championship marks a
+        significant new chapter for our sport. A new race, new teams, and the arrival of new manufacturers, all ushering
+        in a fresh era of innovation and competition.</p>
+
+      <p>With 24 Grands Prix across five continents, the season truly reflects the global nature of our community, while
+        the improved geographical flow of the calendar shows our joint commitment to making the championship more
+        efficient and sustainable.</p>
+
+      <p>The debut of Madrid, the arrival of iconic brands like Audi, Cadillac, and Ford, and the introduction of the
+        next generation of F1 cars powered by 100% advanced sustainable fuels signal an exciting new era of racing.</p>
+
+      <p>“My thanks to everyone involved in putting on this incredible season and in delivering a calendar that
+        continues to drive the sport forward on all fronts. And, my thanks to the fans whose passion and unwavering
+        support keep the spirit of our sport alive.”</p>
+
+      <p>As in 2025, six of the 24 venues on the calendar will host F1 Sprint events. For the <span class="kit">2026
+          season they are China, Miami, Canada, Great Britain, the Netherlands and Singapore.</span></p>
     </div>
   </div>
 
@@ -538,7 +615,8 @@
         <p>Your ultimate destination for motorsport news, telemetry data, and race weekend schedules.</p>
         <div class="link_social">
           <a href="https://www.facebook.com/share/18Qh47CpqL/"><img src="img/logo/fb.png" alt="facebook"></a>
-          <a href="https://www.tiktok.com/@tyzo92?_r=1&_t=ZS-97tOq0W3lMQ"><img src="img/logo/tiktok.png" alt="tiktok"></a>
+          <a href="https://www.tiktok.com/@tyzo92?_r=1&_t=ZS-97tOq0W3lMQ"><img src="img/logo/tiktok.png"
+              alt="tiktok"></a>
           <a href="https://t.me/HeaTy11"><img src="img/logo/tg1.png" alt="telegram"></a>
           <a href="https://youtube.com/@tyzo_999?si=thQLvRNdyPQgLAPV"><img src="img/logo/youtube.png" alt="youtube"></a>
         </div>

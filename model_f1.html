@@ -12,6 +12,12 @@
             box-sizing: border-box;
         }
 
+        @font-face {
+            font-family: 'MyCustomFont';
+            /* If style.css is in a 'css' folder, go up one level first: */
+            src: url('../fonts/font-file.woff2') format('woff2');
+        }
+
         html {
             scroll-behavior: smooth;
             scroll-padding-top: 80px;
@@ -95,23 +101,28 @@
             align-items: center;
             gap: 10px;
         }
-.text_header a {
-  color: white;
-  font-size: 20px;
-  margin-left: 45px;
-  text-decoration: none;
-  transition: 0.2s;
-}
-.text_header a:hover {
-  transform: scale(1.2);
-  color: red;
-}
-.text_header .kit {
-  color: red;
-}
-.text_header .kit:hover {
-  color: white;
-}
+
+        .text_header a {
+            color: white;
+            font-size: 20px;
+            margin-left: 45px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .text_header a:hover {
+            transform: scale(1.2);
+            color: red;
+        }
+
+        .text_header .kit {
+            color: red;
+        }
+
+        .text_header .kit:hover {
+            color: white;
+        }
+
         input {
             padding: .5rem 1rem;
             border: 1px solid gray;
@@ -155,7 +166,7 @@
             width: 100%;
             border-radius: 0 0 5px 5px;
             transition: 0.4s ease;
-            border: 2px solid red;  
+            border: 2px solid red;
         }
 
         .wrapper-team:hover {
@@ -401,7 +412,7 @@
                 grid-template-columns: 1fr;
                 gap: 25px;
             }
-            
+
             .footer-container {
                 flex-direction: column;
                 gap: 30px;
@@ -436,14 +447,17 @@
                 margin-left: 4px !important;
                 margin-right: 4px !important;
             }
+
             .text_header input[type="text"] {
                 width: 95% !important;
                 font-size: 12px;
                 padding: 0.3rem 0.6rem;
             }
+
             .text-text {
                 padding: 30px;
             }
+
             .f1-footer {
                 padding: 40px 0 15px 0;
             }
@@ -561,7 +575,7 @@
         </div>
     </div>
     <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
-    
+
     <footer class="f1-footer">
         <div class="footer-container">
             <div class="footer-brand">

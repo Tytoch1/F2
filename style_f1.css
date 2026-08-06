@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: 'MyCustomFont';
+  /* If style.css is in a 'css' folder, go up one level first: */
+  src: url('../fonts/font-file.woff2') format('woff2');
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -575,8 +579,7 @@ input {
     text-align: center;
   }
   .banner_text {
-    margin-left: -50px;
-    font-size: 30px;
+    font-size: 20px;
   }
   .racer p {
     font-size: 16px !important;

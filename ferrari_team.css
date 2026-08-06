@@ -12,7 +12,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   margin-top: 100px;
-  background-color: black;
+  background-color: #27272a;
   color: white;
   overflow-x: hidden;
 }
@@ -110,11 +110,11 @@ input {
   transform: scale(1.01);
 }
 .banner_caption {
-  position: absolute; 
-  bottom: 60px; 
-  font-size: 50px; 
-  left: 36%; 
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  position: absolute;
+  bottom: 60px;
+  font-size: 50px;
+  left: 36%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
 }
 .under_header {
@@ -220,7 +220,9 @@ input {
   width: 350px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border-bottom: 4px solid #e10600;
 }
 .f1-card:hover {
@@ -297,6 +299,62 @@ input {
   flex-wrap: wrap;
   padding: 0 20px;
 }
+@media (max-width: 1440px) {
+  .header_container {
+    padding: 0 30px;
+  }
+  .banner_caption {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1280px) {
+  .text_header a {
+    margin-left: 25px;
+    font-size: 18px;
+  }
+  .banner_caption {
+    left: 25%;
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    margin-top: 180px;
+    text-align: center;
+  }
+  .full_text {
+    height: auto;
+    padding: 12px 0;
+  }
+  .header_container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .text_header {
+    justify-content: center;
+    margin-left: 0;
+    gap: 12px;
+  }
+  .text_header a {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .img_container {
+    height: 350px !important;
+  }
+  .banner_caption {
+    position: static !important;
+    font-size: 28px !important;
+    bottom: auto !important;
+    margin-top: 20px;
+  }
+  .text_under_header {
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 15px;
+    width: 90%;
+  }
+}
 @media (max-width: 1023px) {
   body {
     margin-top: 200px;
@@ -307,7 +365,6 @@ input {
     padding: 10px 0;
   }
   .header_container {
-    flex-wrap: wrap;
     gap: 15px;
   }
   .text_header {
@@ -332,101 +389,95 @@ input {
     width: 90%;
   }
 }
+
 @media (max-width: 480px) {
-  body {
-    margin-top: 150px;
-    text-align: center;
-  }
-  .full_text {
-    height: auto;
-    min-height: 70px;
-    padding: 8px 0;
-  }
-  .header_container {
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
-  }
-  .logo {
-    height: 40px;
-    margin-bottom: 5px;
-  }
-  .text_header {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-    margin-left: 0 !important;
-    gap: 8px !important;
-  }
-  .text_header span {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  .text_header input[type="text"] {
-    width: 85% !important;
-    padding: 5px 10px;
-    margin: 0 auto;
-  }
-  .text_header a {
-    font-size: 14px;
-    margin-left: 6px !important;
-    margin-right: 6px !important;
-    padding: 2px 0;
-  }
-  .img_container {
-    height: 250px !important;
-  }
-  .banner_caption {
-    position: static !important;
-    font-size: 20px !important;
-    left: auto !important;
-    bottom: auto !important;
-    margin-top: 15px;
-    text-align: center;
-  }
-  .under_header h1 {
-    font-size: 22px;
-  }
-  .text_under_header {
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 10px;
-    width: 95%;
-    list-style-type: none;
-  }
-  .f1-card {
-    width: 100% !important;
-  }
-  .f1-footer {
-    padding: 20px 10px;
-  }
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-  }
-  .footer-brand {
-    width: 100%;
-    max-width: 100%;
-  }
-  .footer-links-grid {
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-    width: 100%;
-  }
-  .footer-column {
-    text-align: start;
-  }
-  .footer-bottom {
-    text-align: start;
-    font-size: 12px;
-    margin-top: 15px;
+  @media (max-width: 480px) {
+    body {
+      margin-top: 155px;
+    }
+    .text_d {
+      margin-top: 15px;
+    }
+    .f1_index {
+      font-size: 40px;
+      text-align: center;
+    }
+    .banner_text {
+      margin-left: -50px;
+    }
+    .racer p {
+      font-size: 16px !important;
+    }
+    .logo {
+      height: 40px;
+    }
+    .text_header span {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    input {
+      width: 95% !important;
+      font-size: 12px;
+      padding: 0.3rem 0.6rem;
+    }
+    .text_header a {
+      font-size: 11px;
+      margin-left: 4px !important;
+      margin-right: 4px !important;
+    }
+    .img_container {
+      height: 250px !important;
+    }
+    .banner_caption {
+      position: static !important;
+      font-size: 20px !important;
+      left: auto !important;
+      bottom: auto !important;
+      margin-top: 15px;
+      text-align: center;
+      margin-right: 100px;
+    }
+    .under_header h1 {
+      font-size: 22px;
+    }
+    .text_under_header {
+      font-size: 16px;
+      line-height: 24px;
+      margin-left: 10px;
+      width: 95%;
+      list-style-type: none;
+    }
+    .f1-card {
+      width: 100% !important;
+    }
+    .f1-footer {
+      padding: 20px 10px;
+    }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 25px;
+    }
+    .footer-brand {
+      width: 100%;
+      max-width: 100%;
+    }
+    .footer-links-grid {
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      width: 100%;
+    }
+    .footer-column {
+      text-align: start;
+    }
+    .footer-bottom {
+      text-align: start;
+      font-size: 12px;
+      margin-top: 15px;
+    }
   }
 }

@@ -11,10 +11,11 @@ html {
 
 body {
   margin-top: 100px;
-  background-color: black;
   color: white;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+  background-color: #27272a;
+  background-attachment: fixed;
 }
 
 .full_text {
@@ -407,6 +408,10 @@ input {
     height: auto;
     padding: 10px 0;
   }
+  .f1_index {
+    margin-top: 50px;
+    font-size: 50px;
+  }
   .header_container {
     flex-wrap: wrap;
     gap: 15px;
@@ -426,8 +431,9 @@ input {
     left: 10%;
     bottom: 15%;
   }
-  .section_title, 
+  .section_title,
   .home h1.video_title {
+    text-align: center;
     font-size: 35px;
     margin-left: 25px;
   }
@@ -463,36 +469,7 @@ input {
 }
 @media (max-width: 767px) {
   body {
-    margin-top: 200px;
-  }
-  .text_d {
-    margin-top: 50px;
-  }
-  .f1_index{
-    font-size: 40px;
-    text-align: center;
-  }
-  .banner_text{
-    margin-right: 30px;
-    font-size: 25px;
-  }
-  .racer p {
-    font-size: 16px !important;
-  }
-  .logo {
-    height: 40px;
-  }
-  .section_title{
-    text-align: center;
-  }
-  .video_title{
-    text-align: center;
-    margin: 5px;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    margin-top: 110px;
+    margin-top: 150px;
   }
   .full_text {
     height: auto;
@@ -517,11 +494,11 @@ input {
     left: 10%;
     bottom: 15%;
   }
-  .section_title{
+  .section_title {
     text-align: center !important;
     margin-left: 50px;
   }
-  .video_title{
+  .video_title {
     text-align: center;
     margin: 5px;
   }
@@ -591,11 +568,11 @@ input {
   .text_d {
     margin-top: 15px;
   }
-  .f1_index{
+  .f1_index {
     font-size: 40px;
     text-align: center;
   }
-  .banner_text{
+  .banner_text {
     margin-left: -50px;
   }
   .racer p {
@@ -604,10 +581,10 @@ input {
   .logo {
     height: 40px;
   }
-  .section_title{
+  .section_title {
     text-align: center;
   }
-  .video_title{
+  .video_title {
     text-align: center;
     margin: 5px;
   }

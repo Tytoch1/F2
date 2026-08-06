@@ -579,7 +579,7 @@ input {
     text-align: center;
   }
   .banner_text {
-    font-size: 15px;
+    font-size: 30px;
   }
   .racer p {
     font-size: 16px !important;
@@ -619,5 +619,10 @@ input {
   }
   .link_social img {
     width: 14% !important;
+  }
+}
+@media (max-width: 412px) {
+  .banner_text {
+    font-size: 25px;
   }
 }

@@ -630,3 +630,8 @@ input {
     width: 14% !important;
   }
 }
+@media (max-width: 412px) {
+  body {
+    margin-top: 120px !important;
+  }
+}

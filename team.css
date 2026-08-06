@@ -109,7 +109,6 @@ input {
 }
 .team_image {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   justify-items: center;
   margin-top: 25px;
@@ -407,7 +406,7 @@ input {
 }
 @media (max-width: 480px) {
   body {
-    margin-top: 150px !important;
+    margin-top: 120px !important;
   }
   .text_d {
     font-size: 24px;

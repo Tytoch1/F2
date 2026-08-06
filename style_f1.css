@@ -239,6 +239,7 @@ input {
 
 .text_1 {
   font-size: 20px;
+  text-align: start;
   width: 100%;
 }
 
@@ -563,7 +564,8 @@ input {
 }
 @media (max-width: 480px) {
   body {
-    margin-top: 155px;
+    margin-top: 100px;
+    font-size: 25px;
   }
   .text_d {
     margin-top: 15px;
@@ -574,6 +576,7 @@ input {
   }
   .banner_text {
     margin-left: -50px;
+    font-size: 30px;
   }
   .racer p {
     font-size: 16px !important;
@@ -582,11 +585,12 @@ input {
     height: 40px;
   }
   .section_title {
-    text-align: center;
+    font-size: 25px;
+    margin-right: 50px;
   }
   .video_title {
-    text-align: center;
-    margin: 5px;
+    font-size: 25px;
+    margin-right: 20px;
   }
   .text_header a {
     font-size: 11px;

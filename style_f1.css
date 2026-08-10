@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: 'MyCustomFont';
+  font-family: "MyCustomFont";
   /* If style.css is in a 'css' folder, go up one level first: */
-  src: url('../fonts/font-file.woff2') format('woff2');
+  src: url("../fonts/font-file.woff2") format("woff2");
 }
 html {
   scroll-behavior: smooth;
@@ -69,7 +69,6 @@ body {
   border: 2px solid red;
   filter: brightness(0.65);
   transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  object-fit: cover;
 }
 
 .img_top:hover {
@@ -89,6 +88,9 @@ body {
   text-align: center;
   font-style: italic;
   font-size: 70px;
+  background: linear-gradient(135deg, white 90%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .section_title {

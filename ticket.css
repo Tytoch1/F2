@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: 'MyCustomFont';
-  /* If style.css is in a 'css' folder, go up one level first: */
-  src: url('../fonts/font-file.woff2') format('woff2');
-}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -68,10 +63,10 @@ body {
   height: 600px;
   border: 2px solid red;
   filter: brightness(0.65);
-  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s ease;
 }
 .img_top:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 .container1 {
   width: 100%;
@@ -521,7 +516,7 @@ input {
 }
 @media (max-width: 767px) {
   body {
-    margin-top: 1150px !important;
+    margin-top: 150px !important;
   }
   .full_text {
     height: auto;

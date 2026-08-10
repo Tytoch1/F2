@@ -87,8 +87,6 @@ input {
 }
 .team_container {
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
   padding: 20px;
 }
 .team_wrapper {
@@ -109,13 +107,9 @@ input {
   font-size: 25px;
   color: #ccc;
 }
-.team_top_image {
-  width: 100%;
-}
 .team_image {
   display: grid;
   gap: 30px;
-  justify-items: center;
   margin-top: 25px;
 }
 .team_image a {
@@ -124,8 +118,7 @@ input {
   justify-content: center;
 }
 .team_image img {
-  width: 100%;
-  max-width: 550px;
+  width: 80%;
   height: auto;
   border-radius: 10px;
   border: 1px solid rgba(255, 0, 0, 0.3);

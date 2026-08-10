@@ -15,12 +15,6 @@
       box-sizing: border-box;
     }
 
-    @font-face {
-      font-family: 'MyCustomFont';
-      /* If style.css is in a 'css' folder, go up one level first: */
-      src: url('../fonts/font-file.woff2') format('woff2');
-    }
-
     body {
       margin-top: 100px;
       background-color: #27272a;
@@ -94,10 +88,14 @@
     }
 
     .section-title {
-      font-size: 32px;
+      font-size: 52px;
       font-weight: 700;
       margin-bottom: 15px;
-      color: #ffffff;
+      background: linear-gradient(135deg, red 5%, white 35%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'ROG Fonts STRIX SCAR', sans-serif;
+
     }
 
     .about-wrapper {
@@ -220,6 +218,7 @@
     .thank {
       text-align: center;
       margin: 60px 0 30px 0;
+      font-family: 'ROG Fonts STRIX SCAR', sans-serif;
     }
 
     .thank h1 {
@@ -703,6 +702,8 @@
   <div class="thank">
     <h1>Thank <span>YOU</span></h1>
   </div>
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
+
   <!-- Footer -->
   <footer class="f1-footer">
     <div class="footer-container">

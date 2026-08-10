@@ -12,12 +12,6 @@
             box-sizing: border-box;
         }
 
-        @font-face {
-            font-family: 'MyCustomFont';
-            /* If style.css is in a 'css' folder, go up one level first: */
-            src: url('../fonts/font-file.woff2') format('woff2');
-        }
-
         html {
             scroll-behavior: smooth;
             scroll-padding-top: 80px;
@@ -158,6 +152,7 @@
             grid-template-columns: repeat(3, 1fr);
             width: 100%;
             gap: 40px;
+            margin-top: 40px;
         }
 
         .wrapper-team {
@@ -180,6 +175,14 @@
             padding: 15px;
             font-family: sans-serif;
             line-height: 30px;
+        }
+
+        .f1_model {
+            font-family: ROG Fonts STRIX SCAR;
+            font-size: 45px;
+            background: linear-gradient(135deg, red 5%, white 35%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .container-team img {
@@ -434,7 +437,7 @@
                 font-size: 24px;
             }
 
-            .container-team-1 p {
+            .container-team-1 p h1 {
                 font-size: 14px !important;
             }
 
@@ -575,7 +578,6 @@
         </div>
     </div>
     <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
-
     <footer class="f1-footer">
         <div class="footer-container">
             <div class="footer-brand">

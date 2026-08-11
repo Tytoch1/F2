@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: 'MyCustomFont';
-  /* If style.css is in a 'css' folder, go up one level first: */
-  src: url('../fonts/font-file.woff2') format('woff2');
-}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
@@ -91,11 +86,11 @@ input {
 }
 .team_wrapper {
   font-family: ROG Fonts STRIX SCAR;
-  padding: 25px 0;
+  text-align: center;
 }
 .f1_t {
   font-size: 50px;
-  background: linear-gradient(135deg, red 5%, white 50%);
+  background: linear-gradient(135deg, red 45%, white 60%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -106,6 +101,14 @@ input {
   font-weight: 800;
   font-size: 25px;
   color: #ccc;
+}
+.container_lg {
+  text-align: center;
+}
+.lg_1 {
+  width: 4%;
+  border: 1px solid black;
+  border-radius: 100%;
 }
 .team_image {
   display: grid;
@@ -172,6 +175,14 @@ input {
 }
 .social-icon:hover {
   transform: scale(1.1);
+}
+.sponsor {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 5px;
 }
 
 /* Footer Styles */
@@ -336,7 +347,7 @@ input {
 }
 @media (max-width: 767px) {
   body {
-    margin-top: 1150px !important;
+    margin-top: 150px !important;
   }
   .full_text {
     height: auto;
@@ -348,6 +359,9 @@ input {
     align-items: center;
     padding: 5px 10px;
     gap: 10px;
+  }
+  .lg_1 {
+    width: 11%;
   }
   .logo {
     height: 45px;
@@ -405,6 +419,9 @@ input {
 @media (max-width: 480px) {
   body {
     margin-top: 120px !important;
+  }
+  .lg_1 {
+    width: 11%;
   }
   .text_d {
     font-size: 24px;

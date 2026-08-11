@@ -565,7 +565,7 @@ input {
     margin-top: 15px;
   }
   .f1_index {
-    font-size: 40px;
+    font-size: 15px;
     text-align: center;
   }
   .banner_text {
@@ -576,6 +576,9 @@ input {
   }
   .logo {
     height: 40px;
+  }
+  .text_h1 {
+    font-size: 25px;
   }
   .section_title {
     font-size: 25px;

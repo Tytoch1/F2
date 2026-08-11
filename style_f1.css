@@ -44,13 +44,19 @@ body {
 }
 
 .f1_index {
-  background: linear-gradient(135deg, red 5%, white 70%);
+  background: linear-gradient(135deg, red 5%, white 35%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  margin-bottom: 50px;
+  font-family: "ROG Fonts STRIX SCAR", sans-serif;
+  font-size: 53px;
 }
-
+.f1_p {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
 .container {
   text-align: start;
   font-size: 50px;
@@ -182,7 +188,31 @@ input {
   height: 60px;
   width: auto;
 }
+/* .container1 {
+  font-size: 25px;
+  color: aliceblue;
+  overflow: hidden;
+}
+.wrapper1 {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  width: max-content;
+  animation: scroll 50s linear infinite;
+  position: fixed;
+  bottom: 0;
 
+}
+.wrapper img {
+  border: 1px none black;
+  border-radius: 50px;
+}
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+ */
 .racer {
   padding: 50px;
 }

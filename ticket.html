@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shirt F1</title>
+  <!-- AOS CSS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="ticket.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +14,7 @@
     rel="stylesheet">
 </head>
 
-<body style="margin-top: 0;">
+<body style="margin-top: 0; overflow-x: hidden;">
   <header>
     <div class="full_text" style="width: 99.9%;">
       <div class="header_container">
@@ -29,198 +31,199 @@
       </div>
     </div>
   </header>
-  <div class="racer" id="ticket">
+
+  <div class="racer" id="ticket" data-aos="fade-down" data-aos-duration="1200">
     <img src="img/shirt/cover.webp" class="cover" alt="">
   </div>
-  <div class="container_top">
-    <h1 class="s_h"
-" ">Shirt and Hat</h1>
-<p style="margin-left: 50px; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsum, <br>molestias laborum fugiat, praesentium quidem impedit beatae quis magnam nemo ratione. Expedita, itaque a! Accusantium labore quia reiciendis. A, impedit!</p>
+
+  <div class="container_top" data-aos="fade-up">
+    <h1 class="s_h">Shirt and Hat</h1>
+    <p style="margin-left: 50px; font-size: 20px;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsum, <br>molestias laborum fugiat, praesentium quidem impedit beatae quis magnam nemo ratione. Expedita, itaque a! Accusantium labore quia reiciendis. A, impedit!
+    </p>
   </div>
-  <div class=" f1-card-container">
-      <div class="f1-card">
-        <div class="card-image-wrapper">
 
-          <img src="img/shirt/1.webp" alt="ticket_low" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Shirt Mascerdas <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to
-              Order</a></button>
-        </div>
+  <div class="f1-card-container">
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/1.webp" alt="ticket_low" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/2.jpg" alt="middle_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Shirt Mascerdas <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Shirt Audi <br> 1k$</h3>
-          <button class="order"> <a href="#" style="text-decoration: none; color: white;">Add to
-              Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/2.jpg" alt="middle_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/3.webp" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Shirt Audi <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Shirt Mascerdas <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/3.webp" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/4.jpg" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Shirt Mascerdas <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Shirt Astonmatin <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/4.jpg" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/5.jpg" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Shirt Astonmatin <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Shirt Ferrari <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/5.jpg" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/6.jpg" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Shirt Ferrari <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Shirt Redbull <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/6.jpg" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/7.jpg" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Shirt Redbull <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Shirt Masclren <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/7.jpg" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/8.jpg" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Shirt Masclren <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Shirt Aline <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/8.jpg" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/hat1.webp" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Shirt Aline <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Hat Aline <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/hat1.webp" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/hat2.webp" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Hat Aline <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Hat Audi <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/hat2.webp" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/hat3.jpg" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Hat Audi <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Hat Ferrari <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/hat3.jpg" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/hat4.avif" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Hat Ferrari <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Hat Williams <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/hat4.avif" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/hat5.avif" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Hat Williams <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Hat Masclren <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/hat5.avif" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/hat6.jpg" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Hat Masclren <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Hat Redbull <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/hat6.jpg" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/hat8.avif" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Hat Redbull <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Hat Cadillas <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/hat8.avif" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
-      <div class="f1-card">
-        <div class="card-image-wrapper">
-          <img src="img/shirt/hat9.webp" alt="vip_ticket" class="driver-img">
-          <p class="discount">Discount 50% for chrismas day</p>
+      <div class="card-content">
+        <h3 class="driver-name">Hat Cadillas <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
 
-        </div>
-        <div class="card-content">
-          <h3 class="driver-name">Hat Mascedas <br> 1k$</h3>
-          <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
-        </div>
+    <div class="f1-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card-image-wrapper">
+        <img src="img/shirt/hat9.webp" alt="vip_ticket" class="driver-img">
+        <p class="discount">Discount 50% for chrismas day</p>
       </div>
+      <div class="card-content">
+        <h3 class="driver-name">Hat Mascedas <br> 1k$</h3>
+        <button class="order"><a href="#" style="text-decoration: none; color: white;">Add to Order</a></button>
+      </div>
+    </div>
   </div>
-  </div>
-    <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
 
-    <div class="sponsor">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;" data-aos="zoom-in">
+
+  <div class="sponsor" data-aos="fade-up">
     <div class="container_sponsor">
       <img src="img/sponsor/1900w-aramco.avif" width="8%">
       <img src="img/sponsor/1900w-aws-black.avif" width="8%">
@@ -236,10 +239,11 @@
     </div>
   </div>
 
-  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;" data-aos="zoom-in">
+
   <footer class="f1-footer">
     <div class="footer-container">
-      <div class="footer-brand">
+      <div class="footer-brand" data-aos="fade-right">
         <h2 class="footer-logo">F1<span>HUB</span></h2>
         <p>Your ultimate destination for motorsport news, telemetry data, and race weekend schedules.</p>
         <div class="link_social">
@@ -254,7 +258,7 @@
         </div>
       </div>
       <div class="footer-links-grid">
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
           <h3>THE GRID</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -262,14 +266,14 @@
             <li><a href="team.html">Teams</a></li>
           </ul>
         </div>
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
           <h3>RACE WEEKEND</h3>
           <ul>
             <li><a href="chanpan.html">Champan</a></li>
             <li><a href="model_f1.html">Model</a></li>
           </ul>
         </div>
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
           <h3>PADDOCK</h3>
           <ul>
             <li><a href="about.html">About</a></li>
@@ -281,6 +285,16 @@
       <p>&copy; 2026 F1 Hub. Unofficial fan project.</p>
     </div>
   </footer>
+
+  <!-- AOS JS CDN -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  </script>
 </body>
 
 </html>

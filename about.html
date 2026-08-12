@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - F1 Hub</title>
+  <!-- AOS CSS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -232,13 +234,13 @@
     }
 
     .sponsor {
-  width: 100%;
-  display: flex;
-  gap: 20px;
-  margin-top: 50px;
-  text-align: center;
-  padding: 5px;
-}
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      margin-top: 50px;
+      text-align: center;
+      padding: 5px;
+    }
 
     .f1-footer {
       background-color: #111112;
@@ -628,7 +630,7 @@
     </div>
   </header>
 
-  <div style="width: 85%; max-width: 1000px; margin: 40px auto 20px auto;">
+  <div style="width: 85%; max-width: 1000px; margin: 40px auto 20px auto;" data-aos="fade-down">
     <h1 id="about" class="section-title">Project Overview</h1>
     <p style="color: #cccccc; font-size: 15px; line-height: 1.6;">
       This is my first major project, which I completed independently within two weeks.
@@ -638,7 +640,7 @@
   </div>
 
   <!-- Teacher Profile -->
-  <div class="about-wrapper">
+  <div class="about-wrapper" data-aos="fade-up" data-aos-delay="100">
     <h2 style="font-size: 18px; margin-bottom: 20px; color: #e10600;">Teacher Profile</h2>
     <div class="about-content">
       <div class="profile-card">
@@ -652,8 +654,8 @@
       </div>
     </div>
   </div>
-  <!-- studennt Profile -->
-  <div class="about-wrapper">
+  <!-- Student Profile -->
+  <div class="about-wrapper" data-aos="fade-up" data-aos-delay="200">
     <h2 style="font-size: 18px; margin-bottom: 20px; color: #e10600;">Student Profile</h2>
     <div class="about-content">
       <div class="profile-card">
@@ -665,11 +667,11 @@
         <p>Group: <span class="highlight">SX16</span></p>
         <p>School: <span class="highlight">Setec Institute</span></p>
         <p>Contact: <a href="https://t.me/HeaTy11" target="_blank">Heaty</a></p>
-        <!-- input -->
       </div>
     </div>
   </div>
-  <div class="container-anima">
+
+  <div class="container-anima" data-aos="zoom-in" data-aos-delay="100">
     <h2>The Percentage Rate</h2>
 
     <div class="container-skill">
@@ -707,13 +709,15 @@
       aperiam, dignissimos minima laudantium debitis tenetur sed natus.
     </p>
   </div>
+
   <!-- Thank You Section -->
-  <div class="thank">
+  <div class="thank" data-aos="zoom-in">
     <h1>Thank <span>YOU</span></h1>
   </div>
-    <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
 
-    <div class="sponsor">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;" data-aos="zoom-in">
+
+  <div class="sponsor" data-aos="fade-up">
     <div class="container_sponsor">
       <img src="img/sponsor/1900w-aramco.avif" width="8%">
       <img src="img/sponsor/1900w-aws-black.avif" width="8%">
@@ -729,12 +733,12 @@
     </div>
   </div>
 
-  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;" data-aos="zoom-in">
 
   <!-- Footer -->
   <footer class="f1-footer">
     <div class="footer-container">
-      <div class="footer-brand">
+      <div class="footer-brand" data-aos="fade-right">
         <h2 class="footer-logo">F1<span>HUB</span></h2>
         <p>Your ultimate destination for motorsport news, telemetry data, and race weekend schedules.</p>
         <div class="link_social">
@@ -748,7 +752,7 @@
         </div>
       </div>
       <div class="footer-links-grid">
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
           <h3>The Grid</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -756,14 +760,14 @@
             <li><a href="team.html">Teams</a></li>
           </ul>
         </div>
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
           <h3>Race Weekend</h3>
           <ul>
             <li><a href="chanpan.html">Champan</a></li>
             <li><a href="model_f1.html">Model</a></li>
           </ul>
         </div>
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
           <h3>Paddock</h3>
           <ul>
             <li><a href="#about">About</a></li>
@@ -775,6 +779,16 @@
       <p>&copy; 2026 F1 Hub. Unofficial fan project.</p>
     </div>
   </footer>
+
+  <!-- AOS JS CDN -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  </script>
 </body>
 
 </html>

@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ferrari Team</title>
   <link rel="stylesheet" href="ferrari_team.css">
+  
+  <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -25,18 +28,22 @@
       </div>
     </div>
   </header>
+
   <div class="team_container">
-    <div class="team_container3">
+    <div class="team_container3" data-aos="fade-down" data-aos-duration="1000">
       <img src="img/racer/ferrai team.webp" alt="ferrari" width="100%" height="705px" class="img_container">
-      <p
-        class="banner_caption">
-        Ferrari F1 Team <br><span>The Champanship 2026</span></p>
+      <p class="banner_caption" data-aos="fade-right" data-aos-delay="300">
+        Ferrari F1 Team <br><span>The Champanship 2026</span>
+      </p>
     </div>
+
     <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 20px; margin-top: 30px;">
-    <div class="under_header">
+
+    <div class="under_header" data-aos="fade-up">
       <h1>Information Ferrari Team 2026</h1>
     </div>
-    <div class="text_under_header">
+
+    <div class="text_under_header" data-aos="fade-up" data-aos-delay="100">
       <p>Scuderia Ferrari, officially known as Scuderia Ferrari HP, is one of the most iconic and historic names in
         Formula 1. Based in Maranello, Italy, they are the only team to have competed in every F1 season since the World
         Championship began in 1950.
@@ -59,14 +66,15 @@
       </p>
     </div>
   </div>
+
   <div class="driver_m">
-    <div class="f1-card">
+    <div class="f1-card" data-aos="fade-right" data-aos-duration="800">
       <div class="card-image-wrapper">
-        <img src="img/racer/lewia hamiton.jpg" alt="Max Verstappen" class="driver-img" style="height: 550px;">
+        <img src="img/racer/lewia hamiton.jpg" alt="Lewis Hamilton" class="driver-img" style="height: 550px;">
       </div>
       <div class="card-content">
-        <span class="team-badge">Ferrair Racing</span>
-        <h3 class="driver-name">Lewia Hamiton</h3>
+        <span class="team-badge">Ferrari Racing</span>
+        <h3 class="driver-name">Lewis Hamilton</h3>
         <ul class="stats-list">
           <li><strong>4-Time World Champion:</strong> Secured consecutive titles from 2021 to 2024.</li>
           <li><strong>Historic Dominance:</strong> Set the record for most wins in a single season (19/23).</li>
@@ -75,13 +83,14 @@
         </ul>
       </div>
     </div>
-    <div class="f1-card">
+
+    <div class="f1-card" data-aos="fade-left" data-aos-duration="800">
       <div class="card-image-wrapper">
-        <img src="img/racer/charles leclerc.jpg" alt="Max Verstappen" class="driver-img" style="height: 550px;">
+        <img src="img/racer/charles leclerc.jpg" alt="Charles Leclerc" class="driver-img" style="height: 550px;">
       </div>
       <div class="card-content">
-        <span class="team-badge">Ferrair Racing</span>
-        <h3 class="driver-name">Charles leclerc</h3>
+        <span class="team-badge">Ferrari Racing</span>
+        <h3 class="driver-name">Charles Leclerc</h3>
         <ul class="stats-list">
           <li><strong>4-Time World Champion:</strong> Secured consecutive titles from 2021 to 2024.</li>
           <li><strong>Historic Dominance:</strong> Set the record for most wins in a single season (19/23).</li>
@@ -91,9 +100,10 @@
       </div>
     </div>
   </div>
-    <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
 
-    <div class="sponsor">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
+
+  <div class="sponsor" data-aos="fade-up" data-aos-duration="600">
     <div class="container_sponsor">
       <img src="img/sponsor/1900w-aramco.avif" width="8%">
       <img src="img/sponsor/1900w-aws-black.avif" width="8%">
@@ -110,13 +120,14 @@
   </div>
 
   <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;">
+
   <footer class="f1-footer">
     <div class="footer-container">
-      <div class="footer-brand">
+      <div class="footer-brand" data-aos="fade-right">
         <h2 class="footer-logo">F1<span>HUB</span></h2>
         <p>Your ultimate destination for motorsport news, telemetry data, and race weekend schedules.</p>
       </div>
-      <div class="footer-links-grid">
+      <div class="footer-links-grid" data-aos="fade-left">
         <div class="footer-column">
           <h3>THE GRID</h3>
           <ul>
@@ -132,7 +143,6 @@
             <li><a href="model_f1.html">Model</a></li>
           </ul>
         </div>
-
         <div class="footer-column">
           <h3>PADDOCK</h3>
           <ul>
@@ -145,6 +155,16 @@
       <p>&copy; 2026 F1 Hub. Unofficial fan project.</p>
     </div>
   </footer>
+
+  <!-- AOS JavaScript Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 120
+    });
+  </script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@ body {
   display: flex;
   width: 100%;
   height: 80px;
-    font-family: "Press Start 2P", system-ui;
+  font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
   background-color: black;
@@ -45,17 +45,17 @@ body {
   bottom: 15%;
   text-align: center;
   font-style: italic;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 900;
   font-size: 55px;
   background: linear-gradient(135deg, red 8%, white 95%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  
 }
 
 .container {
   text-align: start;
   font-size: 50px;
-  font-family: "Black Ops One", system-ui;
   font-weight: 400;
   font-style: normal;
 }
@@ -80,8 +80,7 @@ body {
 .section_title {
   margin-left: 45px;
   font-size: 50px;
-  font-family: Black Ops One;
-  font-style: oblique;
+  font-family: "Sekuya", system-ui;
   background: linear-gradient(135deg, red 5%, white 50%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -251,6 +250,8 @@ input {
   font-family: Black Ops One;
   margin-left: 80px;
   font-size: 50px;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 900;
   font-style: oblique;
   background: linear-gradient(135deg, red 5%, white 50%);
   -webkit-text-fill-color: transparent;

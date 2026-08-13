@@ -52,6 +52,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  font-family: "Press Start 2P", system-ui;
   gap: 15px;
   margin-left: auto;
 }
@@ -85,7 +86,6 @@ input {
   padding: 20px;
 }
 .team_wrapper {
-  font-family: ROG Fonts STRIX SCAR;
   text-align: center;
 }
 .f1_t {
@@ -94,6 +94,7 @@ input {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+   font-family: "Black Ops One", system-ui;
   margin-bottom: 10px;
 }
 .team_subtitle {

@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "MyFont";
-  src: url("../fonts/myfont.woff2") format("woff2");
-}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -61,8 +57,8 @@ body {
   margin-top: 20px;
   margin-left: 50px;
   font-size: 55px;
-  font-family: ROG Fonts STRIX SCAR;
-  background: linear-gradient(135deg, red 5%, white 85%);
+  font-family: "Sekuya", system-ui;
+  background: linear-gradient(135deg, red 5%, white 30%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }

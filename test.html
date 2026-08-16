@@ -1,0 +1,49 @@
+<script>
+        const translations = {
+            en: {
+                home: "Home",
+                service: "Service",
+                about: "About Us",
+                contact: "Contact",
+                title: "How to make a Link Jump in the Page <br> and change the language using JavaScript",
+            },
+
+            km: {
+                home: "ទំព័រដើម",
+                service: "សេវាកម្ម",
+                about: "អំពីយើង",
+                contact: "ទំនាក់ទំនង",
+                title: "របៀបធ្វើ Link Jump in the Page <br> និង ការប្តូរភាសា តាមរបៀប JavaScript",
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById("title").innerHTML = translations[lang].title;
+                
+            document.getElementById("homeLink").innerHTML = translations[lang].home;
+            document.getElementById("serviceLink").innerHTML = translations[lang].service;
+            document.getElementById("aboutLink").innerHTML = translations[lang].about;
+            document.getElementById("contactLink").innerHTML = translations[lang].contact;
+
+            document.getElementById("homeTitle").innerHTML = translations[lang].home;
+            document.getElementById("serviceTitle").innerHTML = translations[lang].service;
+            document.getElementById("aboutTitle").innerHTML = translations[lang].about;
+            document.getElementById("contactTitle").innerHTML = translations[lang].contact;
+        }
+
+        // link active
+        const links = document.querySelectorAll(".nav-link");
+
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+
+                // Remove active from all links
+                links.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                // Add active to clicked link
+                this.classList.add("active");
+            });
+        });
+    </script>

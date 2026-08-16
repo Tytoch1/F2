@@ -6,11 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F1</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sekuya&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sekuya&display=swap" rel="stylesheet">
   <!-- AOS CSS CDN -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
   <link rel="stylesheet" href="style_f1.css">
 </head>
 
@@ -21,18 +28,18 @@
         <img src="img/logo/logo_f1.jpg" alt="f1" class="logo">
         <div class="text_header">
           <span><input type="text" placeholder="Search .........."></span>
-          <a href="#home">Home</a>
-          <a href="ticket.html" class="kit">Shirt</a>
-          <a href="team.html">Team</a>
-          <a href="chanpan.html" class="kit">Champan</a>
-          <a href="model_f1.html">Model</a>
-          <a href="about.html" class="kit">About</a>
+          <a href="#home" id="homelink">Home</a>
+          <a href="ticket.html" class="kit" id="shirtlink">Shirt</a>
+          <a href="team.html" id="teamlink">Team</a>
+          <a href="chanpan.html" class="kit" id="champanlink">Champan</a>
+          <a href="model_f1.html" id="modellink">Model</a>
+          <a href="about.html" class="kit" id="aboutlink">About</a>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
+  <div class="container_top">
     <div class="container1" id="home">
       <div class="banner_wrapper" data-aos="fade-down" data-aos-duration="1200">
         <img src="img/racer/pofile_f1.jpg" width="100%" class="img_top">
@@ -42,16 +49,22 @@
       </div>
     </div>
   </div>
-
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-translate"> Choose language</i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark menu">
+      <li><a class="dropdown-item" href="#" onclick="changelanguage('km')">ខ្មែរ</a></li>
+      <li><a class="dropdown-item" href="#" onclick="changelanguage('en')">English</a></li>
+    </ul>
+  </div>
   <p class="section_title" data-aos="fade-right">Photo Driver Racing</p>
-
   <div class="container2">
     <img src="img/racer/raing1.jpg" width="23%" class="img1" alt="Racing 1" data-aos="zoom-in" data-aos-delay="100">
     <img src="img/racer/racing3" width="23%" class="img2" alt="Racing 3" data-aos="zoom-in" data-aos-delay="200">
     <img src="img/racer/racing2.jpg" width="23%" class="img3" alt="Racing 2" data-aos="zoom-in" data-aos-delay="300">
     <img src="img/racer/racing4" width="23%" class="img4" alt="Racing 4" data-aos="zoom-in" data-aos-delay="400">
   </div>
-
   <div class="text_1">
     <h1 class="text_h1" data-aos="fade-up" style="background: linear-gradient(135deg, red 15%, white 80%);
       -webkit-text-fill-color: transparent;
@@ -66,14 +79,22 @@
       motorsport, blending breathtaking speed, raw driver talent, and <u><i>ultimate engineering technology</i></u>.
       <br><span class="inline_flex_text">
         <span data-aos="fade-right">
-          More than just a sport, F1 is a global spectacle of breathtaking speed and elite driver talent. From the historic streets of Monaco to the glittering night of Singapore, every circuit offers a unique ultimate test. Behind every victory is an army of brilliant minds, pushing the absolute boundaries of cutting-edge automotive technology and data. Aerodynamic chassis, hybrid power units, and split-second strategic decisions are what separate the good from the legendary. It is a high-stakes chess game played at 350 km/h, where a single millimeter or a two-second pit stop changes everything. Championships are hard-earned, and drivers transform into motorsport heroes on the tarmac.
+          More than just a sport, F1 is a global spectacle of breathtaking speed and elite driver talent. From the
+          historic streets of Monaco to the glittering night of Singapore, every circuit offers a unique ultimate test.
+          Behind every victory is an army of brilliant minds, pushing the absolute boundaries of cutting-edge automotive
+          technology and data. Aerodynamic chassis, hybrid power units, and split-second strategic decisions are what
+          separate the good from the legendary. It is a high-stakes chess game played at 350 km/h, where a single
+          millimeter or a two-second pit stop changes everything. Championships are hard-earned, and drivers transform
+          into motorsport heroes on the tarmac.
         </span>
-        <img src="img/racer/f1_global" width="30%" class="img5" style="border-radius: 25px 25px;" alt="F1 Global" data-aos="fade-left" data-aos-delay="200">
+        <img src="img/racer/f1_global" width="30%" class="img5" style="border-radius: 25px 25px;" alt="F1 Global"
+          data-aos="fade-left" data-aos-delay="200">
       </span>
     </p>
   </div>
 
-  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 40px; margin-top: 20px;" data-aos="zoom-in">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 40px; margin-top: 20px;"
+    data-aos="zoom-in">
 
   <div class="home">
     <h1 class="video_title" data-aos="fade-right">Video Driver Racing</h1>
@@ -85,7 +106,8 @@
     </div>
   </div>
 
-  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;" data-aos="zoom-in">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;"
+    data-aos="zoom-in">
 
   <div class="sponsor" data-aos="fade-up">
     <div class="container_sponsor">
@@ -103,7 +125,8 @@
     </div>
   </div>
 
-  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;" data-aos="zoom-in">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;"
+    data-aos="zoom-in">
 
   <footer class="f1-footer">
     <div class="footer-container">
@@ -157,6 +180,44 @@
       duration: 1000,
       once: true,
       easing: 'ease-in-out'
+    });
+
+    const translations = {
+      en: {
+        home: "Home",
+        shirt: "Shirt",
+        team: "Team",
+        champan: "Champan",
+        model: "Model",
+        about: "About",
+      },
+      km: {
+        home: "ទំព័រដើម",
+        shirt: "អាវ",
+        team: "ក្រុម",
+        champan: "ម្ចាស់ពាន",
+        model: "ម៉ូដែល",
+        about: "អំពីយើង",
+      }
+    };
+
+    function changelanguage(lang) {
+      document.getElementById("homelink").innerHTML = translations[lang].home;
+      document.getElementById("shirtlink").innerHTML = translations[lang].shirt;
+      document.getElementById("teamlink").innerHTML = translations[lang].team;
+      document.getElementById("champanlink").innerHTML = translations[lang].champan;
+      document.getElementById("modellink").innerHTML = translations[lang].model;
+      document.getElementById("aboutlink").innerHTML = translations[lang].about;
+    }
+
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(navItem => {
+      navItem.addEventListener("click", function () {
+        navLinks.forEach(item => {
+          item.classList.remove("active");
+        });
+        this.classList.add("active");
+      });
     });
   </script>
 </body>

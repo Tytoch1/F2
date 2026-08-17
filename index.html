@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sekuya&display=swap" rel="stylesheet">
+  <!-- Change your existing font line to this -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Moul&family=Siemreap&display=swap" rel="stylesheet">
   <!-- AOS CSS CDN -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Bootstrap -->
@@ -106,8 +108,7 @@
     </div>
   </div>
 
-  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;"
-    data-aos="zoom-in">
+  <hr color="red" size="5px" width="80%" style="margin: auto; margin-bottom: 30px; margin-top: 30px;" data-aos="zoom-in">
 
   <div class="sponsor" data-aos="fade-up">
     <div class="container_sponsor">
@@ -173,53 +174,50 @@
     </div>
   </footer>
 
-  <!-- AOS JS CDN -->
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-in-out'
-    });
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out'
+  });
 
-    const translations = {
-      en: {
-        home: "Home",
-        shirt: "Shirt",
-        team: "Team",
-        champan: "Champan",
-        model: "Model",
-        about: "About",
-      },
-      km: {
-        home: "ទំព័រដើម",
-        shirt: "អាវ",
-        team: "ក្រុម",
-        champan: "ម្ចាស់ពាន",
-        model: "ម៉ូដែល",
-        about: "អំពីយើង",
-      }
-    };
-
-    function changelanguage(lang) {
-      document.getElementById("homelink").innerHTML = translations[lang].home;
-      document.getElementById("shirtlink").innerHTML = translations[lang].shirt;
-      document.getElementById("teamlink").innerHTML = translations[lang].team;
-      document.getElementById("champanlink").innerHTML = translations[lang].champan;
-      document.getElementById("modellink").innerHTML = translations[lang].model;
-      document.getElementById("aboutlink").innerHTML = translations[lang].about;
+  const translations = {
+    en: {
+      home: "Home",
+      shirt: "Shirt",
+      team: "Team",
+      champan: "Champan",
+      model: "Model",
+      about: "About",
+    },
+    km: {
+      home: "ទំព័រដើម",
+      shirt: "អាវ",
+      team: "ក្រុម",
+      champan: "ម្ចាស់ពាន",
+      model: "ម៉ូដែល",
+      about: "អំពីយើង",
     }
+  };
 
-    const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(navItem => {
-      navItem.addEventListener("click", function () {
-        navLinks.forEach(item => {
-          item.classList.remove("active");
-        });
-        this.classList.add("active");
-      });
+  function changelanguage(lang) {
+    const ids = ["homelink", "shirtlink", "teamlink", "champanlink", "modellink", "aboutlink"];
+    
+    const fontFamily = (lang === 'km') ? "'Siemreap', sans-serif" : "'Press Start 2P', sans-serif";
+
+    ids.forEach(id => {
+      const element = document.getElementById(id);
+      const key = id.replace('link', ''); 
+      
+      element.innerHTML = translations[lang][key];
+      element.style.fontFamily = fontFamily;
+      
+      element.style.fontSize = (lang === 'km') ? "16px" : "14px"; 
     });
-  </script>
+  }
+</script>
 </body>
 
 </html>

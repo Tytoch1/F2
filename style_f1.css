@@ -118,7 +118,7 @@ input {
   margin-left: 45px;
   font-size: 50px;
   font-family: "Sekuya", system-ui;
-  background: linear-gradient(135deg, red 5%, white 80%);
+  background: linear-gradient(135deg, red 5%, white 50%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -138,9 +138,8 @@ input {
   z-index: 9999;
   border-radius: 17px;
   box-shadow: 0 0 10px 3px rgb(74, 74, 255);
-  animation: autorun 30s linear infinite alternate;
+  animation: autorun 60s linear infinite alternate;
 }
-
 .dropdown ul li {
   font-size: 20px !important;
 }
@@ -173,7 +172,7 @@ input {
 .img5 {
   transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
   cursor: pointer;
-  filter: brightness(0.50) !important;
+  filter: brightness(0.5) !important;
 }
 
 .img1:hover,
@@ -281,7 +280,7 @@ input {
   font-family: "Black Ops One", system-ui;
   font-weight: 900;
   font-style: oblique;
-  background: linear-gradient(135deg, red 5%, white 80%);
+  background: linear-gradient(135deg, red 5%, white 30%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
